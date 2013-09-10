@@ -1,0 +1,207 @@
+/* -- 
+
+    O que tem arrumar (após do reuniao) ?
+
+    - Melhorar o menu na interna, meio atrapalha a leitura.
+    - Botão caracteristica
+    - Bug scroll
+
+ -- */
+
+
+/* -- Estilos -- */
+html {overflow-x:hidden;}
+body {color: #666; overflow-x:hidden; font-family: "Titillium Web", sans-serif; font-weight: 300}
+
+    /* -- Títulos -- */
+h1 {font-size: 45px; line-height: 50px; font-weight: 300; text-shadow:1px 1px #000}
+h1 strong {font-weight: 600}
+h2 {font-size: 20px; line-height: 25px; font-weight: 200; text-shadow:1px 1px #000}
+h3 {font-size: 40px; font-weight: 300}
+h4 {font-size: 30px; font-weight: 300}
+
+    /* -- Cores da fonte -- */
+.color-blue {color: #1068BB}
+.color-blue-claro {color: #62AAF4}
+.color-yellow {color: #FED300}
+.color-black {color: #333}
+.color-white {color: #fff}
+
+    /* -- Tamanho da fonte -- */
+.size-small {font-size: 12px}
+.size-big {font-size: 30px}
+.size-medium {font-size: 24px}
+.size-normal {font-size: 16px}
+
+    /* -- Formulário -- */
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {border:4px #EDEDED solid; box-shadow: inset 0 0 2px #999; padding:8px 10px }
+
+    /* -- Fundo -- */
+.bg-blue {background-color: #1068BB}
+.bg-blue-dark {background-color: #094C8D}
+.bg-gray {background: url(../imgs/bg-gray.png)}
+.bg-black {background: url(../imgs/bg-black.png)}
+
+    /* -- Botão -- */
+.btn {border-radius: 35px; border:0; padding:13px 30px 15px 30px; font-size: 19px; text-shadow:none; font-weight: 600; box-shadow:0px 2px rgba(0,0,0,0.2)}
+.btn .icon-arrow-btn {margin:4px 0 0 20px}
+
+    /* -- Cores Gradient Buttons -- */
+.btn-blue:hover {background:#2A76C5; color:#fff;}
+.btn-blue {background: #2B77C3;
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM0N2JjMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZDY2YmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top, #347bc1 0%, #0d66ba 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#347bc1), color-stop(100%,#0d66ba));
+            background: -webkit-linear-gradient(top, #347bc1 0%,#0d66ba 100%);
+            background: -o-linear-gradient(top, #347bc1 0%,#0d66ba 100%);
+            background: -ms-linear-gradient(top, #347bc1 0%,#0d66ba 100%);
+            background: linear-gradient(to bottom, #347bc1 0%,#0d66ba 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#347bc1', endColorstr='#0d66ba',GradientType=0 ); color: #fff}
+
+.btn-yellow:hover {background: #FBD200;}
+.btn-yellow {background: #E3BD00;
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZlZDMwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjY2E5MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top, #fed300 0%, #cca900 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fed300), color-stop(100%,#cca900));
+            background: -webkit-linear-gradient(top, #fed300 0%,#cca900 100%);
+            background: -o-linear-gradient(top, #fed300 0%,#cca900 100%);
+            background: -ms-linear-gradient(top, #fed300 0%,#cca900 100%);
+            background: linear-gradient(to bottom, #fed300 0%,#cca900 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fed300', endColorstr='#cca900',GradientType=0 ); color: #333}
+
+.btn-green:hover {background: #3b9501; color:#fff;}
+.btn-green {background: #399001;
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM5OTAwMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyNDg0MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top,  #399001 0%, #248400 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#399001), color-stop(100%,#248400));
+            background: -webkit-linear-gradient(top,  #399001 0%,#248400 100%);
+            background: -o-linear-gradient(top,  #399001 0%,#248400 100%);
+            background: -ms-linear-gradient(top,  #399001 0%,#248400 100%);
+            background: linear-gradient(to bottom,  #399001 0%,#248400 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#399001', endColorstr='#248400',GradientType=0 ); color: #fff}
+
+/* -- Outros -- */
+.center {text-align: center}
+.relative {position: relative}
+
+/* -- Cubos Texture -- */
+.cubes .container {position: relative}
+.cube-blue1, .cube-blue2, .cube-yellow1, .cube-yellow2, .cube-gray1, .cube-gray2 {position: absolute; z-index:2}
+.cube-blue1 {top:-240px; left:-270px}
+.cube-yellow1 {top:-110px; left: -230px}
+.cube-yellow2 {top:211px; right:-368px}
+.cube-gray2 {top:550px; right: -210px}
+
+/* -- Contato fixo - Fale com consultor -- */
+.fixed-contato {color:#fff; font-weight: bolder; font-size:17px; position: fixed; bottom:0; right: 10px; z-index: 900; background: #0967C1; box-shadow: 0px 0px 15px rgba(0,0,0,0.5); border-radius: 10px 10px 0 0; padding: 15px 25px 3px 25px; border:1px #fff solid; border-bottom:0}
+.fixed-contato .icon-arrow-btn {margin-left: 20px;}
+.fixed-contato:hover {color:#fff}
+
+/* -- Topo -- */
+.cubes ~ .topo {margin-bottom:475px; position: relative; z-index: 100; background: #fff}
+.topo .container {padding: 13px 0; position: relative}
+.logo-viaja .title {font-size: 50px; font-weight:700; float: left; margin: 27px 0 0 18px; color: #1068BB}
+.menu {float:right; margin: -14px 0 0 0; background: #fff; border-radius:0 0 10px 15px}
+.cubes ~ .topo .menu {position: fixed; top:0; right:50px; padding:0 35px 12px 35px; margin:0}
+.menu ul, .menu li:first-child a {margin-left:0}
+.menu li {display: inline}
+.menu a {color:#1068BB; text-decoration:none; font-size: 18px; float: left; margin:13px 0 0 40px; text-align: center}
+.menu a:hover {color: #5591D3}
+.menu i {height: 51px; width: 46px !important; margin-bottom: 5px}
+.menu .title {display: block}
+.menu .big-title {margin:13px -7px 0 33px}
+
+.bcrumb {background:#ededed; margin-bottom: 10px;}
+.breadcrumb {background:none; font-size: 17px; margin:5px 0}
+.breadcrumb li {text-shadow:none}
+
+.h1-title {background: url(../imgs/bg-breadcrumb.jpg); padding: 21px 0; border-bottom:5px #e5e5e5 solid;}
+.h1-title h1 {color:#FED300; font-weight: 600; margin-bottom: 5px;}
+.h1-title h2 {color:#fff; margin-top: 0}
+
+/* -- Destaque - Foto -- */
+.destaque-photo {background: url(../imgs/destaque.jpg) center 97px; padding:186px 0 80px 0; text-align: center; position: fixed; top:0px}
+.destaque-photo h2 {margin: 35px 100px}
+.destaque-photo .btn {margin-bottom: 25px}
+.destaque-photo ~ * {z-index: 1; position: relative}
+
+/* -- Características -- */
+.caracteristicas {z-index:1; position: relative}
+.caracter .row-fluid {padding:30px 0}
+.caracter .btn {margin:10px 0 60px 0}
+.caracter h3 {color: #fff; margin-bottom: 30px}
+.caracter h4 {color: #FED300; margin: 20px 0 30px 0}
+.caracter p {color: #fff; font-size: 22px; line-height: 26px}
+.caracter .desc {float: left; width: 375px}
+.caracter .desc + .zoom-software, .caracter .zoom-software + .desc {margin-left: 30px}
+.zoom-software {float: left}
+.entrar {margin-top: 40px}
+.entrar .zoom-software {margin-top: -40px}
+.checkout {margin-top: 20px}
+.checkout .zoom-software {margin-top: -20px}
+
+/* -- Clientes -- */
+.clientes {padding: 30px 0}
+.clientes .btn {margin: 10px 0 30px 0}
+.clientes h3 {margin-bottom: 35px; color: #333}
+.clientes .col-b .row-fluid:first-child {margin-top: 170px}
+.clientes .span6 .row-fluid {margin-bottom: 50px}
+.depoimento .box {border-radius: 15px 15px 15px 0; margin:0 10px; padding: 20px 25px; color: #fff; font-size: 22px; line-height: 25px; position: relative; z-index: 1}
+.depoimento .box-arrow {width:27px; margin-left:10px; float: left}
+.depoimento .photo-circle {border-radius: 60px; width: 80px; height: 80px; float: left; border:3px #fff solid; overflow: hidden; box-shadow:0 3px 5px rgba(0,0,0,0.2); margin: 15px 23px 0 -10px}
+.depoimento .bg-de-logo {margin: -14px 9px 0 0; float: right}
+.depoimento .de-id {margin-top: 37px}
+.depoimento .de-id p {font-size:20px; margin: 0}
+.depoimento .de-id a {font-size:20px; color: #666}
+
+    /* -- Cores -- */
+.de-green .box {background: #96C200}
+.de-green strong {color: #96C200}
+.de-blue .box {background: #1068BB}
+.de-blue strong {color: #1068BB}
+.de-orange .box {background: #F05700}
+.de-orange strong {color: #F05700}
+
+/* -- Benefícios -- */
+.beneficios .container {margin: 50px auto}
+.beneficios .btn {margin:50px 0 10px 0}
+.beneficios h3 {color:#FED300; margin:0 0 50px 0}
+.detail-icon {text-align: center; margin-bottom: 10px}
+.detail-icon .box {border-radius:20px; background: #fff; padding: 30px 40px}
+.detail-icon .title {font-size: 32px; text-align: center; margin: 30px 0}
+.detail-icon .desc {font-size: 16px; text-align: left}
+.detail-icon .button {margin-bottom: -50px}
+
+    /* -- Cores -- */
+.detail-icon.seguranca .title {color: #1068BB}
+.detail-icon.conteudo .title {color: #B58700}
+.detail-icon.gestao .title {color: #227D00}
+
+/* -- Interna -- */
+.share {position:fixed; left:0; top:345px; width: 100px; padding:15px 20px; background:#f8f8f8; border-radius:0 20px 20px 0}
+.share p {font-size: 16px; font-weight:400;}
+img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
+.interna {margin:40px auto 70px auto}
+.interna p {margin-bottom: 15px; line-height: 22px; font-size: 16px}
+.center-title {text-align: center; margin-bottom: 50px}
+.center-title h3 {color: #0F5EA8; margin: 0 0 15px 0;}
+.center-title p {font-size: 18px}
+
+/* -- Contato -- */
+.form-contato input {width:271px}
+.form-contato textarea {width:590px}
+.form-contato label {font-size: 19px; font-weight:lighter;}
+.form-contato .btn {margin-left: 175px;}
+
+/* -- Rodapé -- */
+.rodape a {color:#fff}
+.rodape .pull-right p {margin:0 0 15px 0}
+.rodape .row-fluid {background: #1068BB; color:#fff; padding:30px 0 70px 0}
+.rodape .pull-right {text-align: right}
+.rodape .pull-right .email {margin-top: 35px}
+
+@media (max-width:1250px) {
+
+    .share {position: static; float: left; width:900px; border-radius: 20px; margin-top: 40px; height: 24px; }
+
+}

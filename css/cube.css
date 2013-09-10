@@ -1,0 +1,41 @@
+.cube-blue1 {
+  background: url(../imgs/cube.png) -387px 0px no-repeat;
+  display: inline-block;
+  width: 300px;
+  height: 650px;
+}
+
+.cube-blue2 {
+  background: url(../imgs/cube.png) 0px -751px no-repeat;
+  display: inline-block;
+  width: 248px;
+  height: 294px;
+}
+
+.cube-gray1 {
+  background: url(../imgs/cube.png) -690px 0px no-repeat;
+  display: inline-block;
+  width: 300px;
+  height: 642px;
+}
+
+.cube-gray2 {
+  background: url(../imgs/cube.png) -993px -297px no-repeat;
+  display: inline-block;
+  width: 248px;
+  height: 294px;
+}
+
+.cube-yellow1 {
+  background: url(../imgs/cube.png) -993px 0px no-repeat;
+  display: inline-block;
+  width: 248px;
+  height: 294px;
+}
+
+.cube-yellow2 {
+  background: url(../imgs/cube.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 384px;
+  height: 748px;
+}

@@ -1,0 +1,174 @@
+.bg-de-logo {
+  background: url(../imgs/sprite/sprite.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 141px;
+  height: 138px;
+}
+
+.de-blue .box-arrow {
+  background: url(../imgs/sprite/sprite.png) 0px -362px no-repeat;
+  display: inline-block;
+  width: 54px;
+  height: 38px;
+}
+
+.de-green .box-arrow {
+  background: url(../imgs/sprite/sprite.png) -106px -362px no-repeat;
+  display: inline-block;
+  width: 54px;
+  height: 38px;
+}
+
+.de-orange .box-arrow {
+  background: url(../imgs/sprite/sprite.png) -365px -241px no-repeat;
+  display: inline-block;
+  width: 54px;
+  height: 38px;
+}
+
+.detail-icon.conteudo .button {
+  background: url(../imgs/sprite/sprite.png) 0px -190px no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+
+.detail-icon.gestao .button {
+  background: url(../imgs/sprite/sprite.png) -193px 0px no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+
+.detail-icon.seguranca .button {
+  background: url(../imgs/sprite/sprite.png) -172px -190px no-repeat;
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+}
+
+.facebook {
+  background: url(../imgs/sprite/sprite.png) -622px -192px no-repeat;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+.google {
+  background: url(../imgs/sprite/sprite.png) -622px 0px no-repeat;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+.icon-arrow-btn {
+  background: url(../imgs/sprite/sprite.png) -622px -384px no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+}
+
+.icon-business {
+  background: url(../imgs/sprite/sprite.png) -488px -452px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+
+.icon-cart {
+  background: url(../imgs/sprite/sprite.png) -195px -452px no-repeat;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
+
+.icon-chat {
+  background: url(../imgs/sprite/sprite.png) -391px -452px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 46px;
+}
+
+.icon-clientes {
+  background: url(../imgs/sprite/sprite.png) -293px -452px no-repeat;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
+
+.icon-home {
+  background: url(../imgs/sprite/sprite.png) -97px -452px no-repeat;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
+
+.icon-white.icon-arrow-btn {
+  background: url(../imgs/sprite/sprite.png) -622px -460px no-repeat;
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+}
+
+.linkedin {
+  background: url(../imgs/sprite/sprite.png) -622px -288px no-repeat;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+.logo {
+  background: url(../imgs/sprite/sprite.png) -365px -113px no-repeat;
+  display: inline-block;
+  width: 76px;
+  height: 76px;
+}
+
+.logo-intip {
+  background: url(../imgs/sprite/sprite.png) -365px 0px no-repeat;
+  display: inline-block;
+  width: 108px;
+  height: 61px;
+}
+
+.twitter {
+  background: url(../imgs/sprite/sprite.png) -622px -96px no-repeat;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+}
+
+li:hover .icon-business, .selected .icon-business {
+  background: url(../imgs/sprite/sprite.png) 0px -452px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 51px;
+}
+
+li:hover .icon-cart, .selected .icon-cart {
+  background: url(../imgs/sprite/sprite.png) -525px -103px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 51px;
+}
+
+li:hover .icon-chat, .selected .icon-chat {
+  background: url(../imgs/sprite/sprite.png) -525px -309px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 51px;
+}
+
+li:hover .icon-clientes, .selected .icon-clientes {
+  background: url(../imgs/sprite/sprite.png) -525px -206px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 51px;
+}
+
+li:hover .icon-home, .selected .icon-home {
+  background: url(../imgs/sprite/sprite.png) -525px 0px no-repeat;
+  display: inline-block;
+  width: 45px;
+  height: 51px;
+}

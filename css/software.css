@@ -1,0 +1,34 @@
+.checkout .zoom-software {
+  background: url(../imgs/software.png) 0px -292px no-repeat;
+  display: inline-block;
+  width: 463px;
+  height: 259px;
+}
+
+.hoteis .zoom-software {
+  background: url(../imgs/software.png) 0px 0px no-repeat;
+  display: inline-block;
+  width: 514px;
+  height: 290px;
+}
+
+.hoteis2 .zoom-software {
+  background: url(../imgs/software.png) 0px -553px no-repeat;
+  display: inline-block;
+  width: 520px;
+  height: 254px;
+}
+
+.pag .zoom-software {
+  background: url(../imgs/software.png) -465px -292px no-repeat;
+  display: inline-block;
+  width: 463px;
+  height: 259px;
+}
+
+.valor .zoom-software {
+  background: url(../imgs/software.png) -516px 0px no-repeat;
+  display: inline-block;
+  width: 522px;
+  height: 266px;
+}
