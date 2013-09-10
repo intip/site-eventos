@@ -1,10 +1,6 @@
 /* -- 
 
-    O que tem arrumar (após do reuniao) ?
-
     - Melhorar o menu na interna, meio atrapalha a leitura.
-    - Botão caracteristica
-    - Bug scroll
 
  -- */
 
@@ -192,6 +188,7 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .form-contato textarea {width:590px}
 .form-contato label {font-size: 19px; font-weight:lighter;}
 .form-contato .btn {margin-left: 175px;}
+.ss-required-asterisk {color:red;}
 
 /* -- Rodapé -- */
 .rodape a {color:#fff}
