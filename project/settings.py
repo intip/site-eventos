@@ -12,7 +12,7 @@ TEMPLATE_DEBUG = DEBUG
 DEFAULT_FROM_EMAIL = "no-reply@intip.com.br"
 
 ADMINS = (
-    ('Guilherme', 'guilhermevierno@gmail'),
+    ('Guilherme', 'guilhermevierno@gmail.com'),
 )
 
 MANAGERS = (
@@ -176,6 +176,10 @@ LOGGING = {
     }
 }
 
+
+ALLOWED_HOSTS = (
+    "viajacom.com.br",
+)
 
 try:
     from local_settings import *
