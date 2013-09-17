@@ -14,3 +14,4 @@ mock
 ipython
 yolk
 gunicorn
+django-contact-form==1.0
