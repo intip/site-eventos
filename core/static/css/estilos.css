@@ -94,8 +94,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .fixed-contato:hover {color:#fff}
 
 /* -- Topo -- */
-.cubes ~ .topo {margin-bottom:475px; position: relative; z-index: 100; background: #fff}
-.topo .container {padding: 13px 0; position: relative}
+.topo {position: relative; z-index:1; background: #fff}
+.topo .container {padding: 15px 0; position: relative}
 .logo-viaja .title {font-size: 50px; font-weight:700; float: left; margin: 27px 0 0 18px; color: #1068BB}
 .menu {float:right; margin: -14px 0 0 0; background: #fff; border-radius:0 0 10px 15px}
 .cubes ~ .topo .menu {position: fixed; top:0; right:50px; padding:0 35px 12px 35px; margin:0}
@@ -116,17 +116,17 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .h1-title h2 {color:#fff; margin-top: 0}
 
 /* -- Destaque - Foto -- */
-.destaque-photo {background: url(../imgs/destaque.jpg) center 97px; padding:186px 0 80px 0; text-align: center; position: fixed; top:0px}
-.destaque-photo h2 {margin: 35px 100px}
+.destaque-photo {background: url(../imgs/destaque.jpg) center 52px; padding:171px 0 60px 0; text-align: center; position: fixed; top:0px}
+.destaque-photo h2 {margin: 30px 100px}
 .destaque-photo .btn {margin-bottom: 25px}
 .destaque-photo ~ * {z-index: 1; position: relative}
 
 /* -- Características -- */
-.caracteristicas {z-index:1; position: relative}
+.caracteristicas {z-index:1; position: relative; margin-top: 426px}
 .caracter .row-fluid {padding:30px 0}
 .caracter .btn {margin:10px 0 60px 0}
 .caracter h3 {color: #fff; margin-bottom: 30px}
-.caracter h4 {color: #FED300; margin: 20px 0 30px 0}
+.caracter h4 {color: #FED300; margin: 20px 0 30px 0; line-height:28px}
 .caracter p {color: #fff; font-size: 22px; line-height: 26px}
 .caracter .desc {float: left; width: 375px}
 .caracter .desc + .zoom-software, .caracter .zoom-software + .desc {margin-left: 30px}
@@ -200,5 +200,7 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 @media (max-width:1250px) {
 
     .share {position: static; float: left; width:900px; border-radius: 20px; margin-top: 40px; height: 24px; }
+    .share p {float: left; width:105px}
+    .share span {margin-top:-1px;}
 
 }

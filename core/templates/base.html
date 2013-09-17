@@ -24,17 +24,12 @@
 </head>
 <body>
 
+    {% block contato %}
     <!-- Contato Fixo -->
-    <a href="contato.html" class="fixed-contato">
+    <a href="/contato/" class="fixed-contato">
         <p>Fale com um consultor <i class="icon-arrow-btn icon-white"></i></p>
     </a>
-
-    <div class="row-fluid cubes">
-        <div class="container">
-            <!-- Cubos -->
-            <div class="cube-yellow2"></div>
-        </div>
-    </div>
+    {% endblock %}
 
     <!-- Topo -->
     <header class="topo">
@@ -50,22 +45,22 @@
             <nav class="menu">
                 <ul>
                     <li class="selected">
-                        <a href="/#" data-scroll="topo">
+                        <a href="/" data-scroll="topo">
                             <i class="icon-home"></i><span class="title">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/#" data-scroll="caracteristicas">
+                        <a href="/produto/">
                             <i class="icon-cart"></i><span class="title">Produto</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/#" data-scroll="clientes">
+                        <a href="/parceiros/">
                             <i class="icon-clientes"></i><span class="title">Parceiros</span>
                         </a>
                     </li>
                     <li>
-                        <a href="/interna/" class="big-title">
+                        <a href="/quemsomos/" class="big-title">
                             <i class="icon-business"></i><span class="title">Quem somos?</span>
                         </a>
                     </li>
@@ -82,7 +77,6 @@
 
     {% block content %}
     {% endblock %}
-
 
     <!-- Rodapé -->
     <footer class="rodape">
@@ -113,6 +107,10 @@
     <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{ STATIC_URL }}js/javascripts.js"></script>
+
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "4df9c63f-840e-469d-972c-a1d559ef94c9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
 </body>
 </html>

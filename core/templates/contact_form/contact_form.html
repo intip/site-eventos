@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
+{% block contato %}
+{% endblock %}
+
 {% block content %}
 
     <!-- Breadcrumb -->
     <div class="row-fluid bcrumb">
         <div class="container">
             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a> <span class="divider">/</span></li>
-                <li class="active">Interna Lorem</li>
+                <li><a href="/">Home</a> <span class="divider">/</span></li>
+                <li class="active">Contato</li>
             </ul>
         </div>
     </div>
@@ -44,6 +47,13 @@
                             </div>
                         </div>
                         <div class="control-group">
+                            {{ form.email.label_tag }}
+                            {{ form.email.errors }}
+                            <div class="controls">
+                                {{ form.email }}
+                            </div>
+                        </div>
+                        <div class="control-group">
                             {{ form.company.label_tag }}
                             {{ form.company.errors }}
                             <div class="controls">
@@ -55,13 +65,6 @@
                             {{ form.telephone.errors }}
                             <div class="controls">
                                 {{ form.telephone }}
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            {{ form.email.label_tag }}
-                            {{ form.email.errors }}
-                            <div class="controls">
-                                {{ form.email }}
                             </div>
                         </div>
                     </div>
@@ -79,72 +82,6 @@
                     </div>
                 </form>
             </div>
-
-            <!--
-            <div class="row-fluid form-contato">
-                <form action="https://docs.google.com/forms/d/17lGMclPh63ewyYrp_W0l8bCgTBqHZiKlp9GKyrt_waQ/formResponse" method="POST" id="ss-form" target="_blank" onsubmit="">
-                    <div class="span4">
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1255977187"><div class="ss-q-title">Seu nome
-                        <span class="ss-required-asterisk">*</span></div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <input type="text" name="entry.1255977187" value="" class="ss-q-short valid" id="entry_1255977187" dir="auto" aria-required="true" required="" title="">
-                        </div></div></div>
-
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item ss-item-required ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1555088919"><div class="ss-q-title">Seu email
-                        <span class="ss-required-asterisk">*</span></div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <input type="text" name="entry.1555088919" value="" class="ss-q-short" id="entry_1555088919" dir="auto" aria-required="true" required="" title="">
-                        </div></div></div>
-
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_320544089"><div class="ss-q-title">Empresa
-                        </div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <input type="text" name="entry.320544089" value="" class="ss-q-short" id="entry_320544089" dir="auto" title="">
-                        </div></div></div>
-
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_644599337"><div class="ss-q-title">Telefone
-                        </div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <input type="text" name="entry.644599337" value="" class="ss-q-short" id="entry_644599337" dir="auto" title="">
-                        </div></div></div>
-
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_644599337"><div class="ss-q-title">Como nos encontrou?
-                        </div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <input type="text" name="entry.644599337" value="" class="ss-q-short" id="entry_644599337" dir="auto" title="">
-                        </div></div></div>
-
-                    </div>
-                    <div class="span8">
-
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_644599337"><div class="ss-q-title">Assunto
-                        </div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <input type="text" name="entry.644599337" value="" class="ss-q-short" id="entry_644599337" dir="auto" title="">
-                        </div></div></div>
-
-                        <div class="ss-form-question errorbox-good">
-                        <div dir="ltr" class="ss-item ss-item-required ss-paragraph-text"><div class="ss-form-entry"><label class="ss-q-item-label" for="entry_1209709527"><div class="ss-q-title">Mensagem
-                        <span class="ss-required-asterisk">*</span></div>
-                        <div class="ss-q-help ss-secondary-text" dir="ltr"></div></label>
-                        <textarea name="entry.1209709527" rows="9" cols="0" class="ss-q-long" id="entry_1209709527" dir="auto" aria-required="true" required=""></textarea>
-                        </div></div></div>
-
-                        <input type="hidden" name="draftResponse" value="[]">
-                        <input type="hidden" name="pageHistory" value="0">
-                        <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-                        <input type="submit" class="btn btn-green" name="submit" value="Enviar" id="ss-submit">
-                        </td>
-                        </tr></tbody></table></div>
-                    </div>
-                </form>
-            </div> -->
 
         </div>
     </div>
