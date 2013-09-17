@@ -9,6 +9,8 @@ PROJECT_DIR = Path(__file__).ancestor(3)
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
+DEFAULT_FROM_EMAIL = "no-reply@intip.com.br"
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
