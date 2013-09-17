@@ -13,4 +13,4 @@ setuptools>=0.8
 mock
 ipython
 yolk
-
+gunicorn
