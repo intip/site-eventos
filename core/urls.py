@@ -7,4 +7,5 @@ from django.conf import settings
 urlpatterns = patterns(
     'core.views',
     url(r'^$', 'homepage', name='homepage'),
+    url(r'^(?P<page>\w+)/$', 'pages', name='pages')
 )

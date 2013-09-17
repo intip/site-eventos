@@ -1,85 +1,5 @@
-<!doctype html>
-<html>
-<head>
-
-    <meta charset="utf-8">
-    <title>Viajacom | Eventos - O melhor sistema de eventos para qualquer empresa de agências</title>
-
-    <!-- CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,700,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/cube.css" />
-    <link rel="stylesheet" type="text/css" href="css/software.css" />
-    <link rel="stylesheet" type="text/css" href="css/sprite.css" />
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .btn {
-           filter: none;
-        }
-      </style>
-    <![endif]-->
-
-</head>
-<body>
-
-    <!-- Contato Fixo -->
-    <a href="contato.html" class="fixed-contato">
-        <p>Fale com um consultor <i class="icon-arrow-btn icon-white"></i></p>
-    </a>
-
-    <div class="row-fluid cubes">
-        <div class="container">
-            <!-- Cubos -->
-            <div class="cube-yellow2"></div>
-        </div>
-    </div>
-
-    <!-- Topo -->
-    <header class="topo">
-        <div class="container">
-
-            <!-- Logo -->
-            <div class="logo-viaja pull-left">
-                <span class="logo pull-left"></span>
-                <span class="title">Eventos</span>
-            </div>
-
-            <!-- Navegação - Fixo -->
-            <nav class="menu">
-                <ul>
-                    <li class="selected">
-                        <a href="#" data-scroll="topo">
-                            <i class="icon-home"></i><span class="title">Home</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-scroll="caracteristicas">
-                            <i class="icon-cart"></i><span class="title">Produto</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" data-scroll="clientes">
-                            <i class="icon-clientes"></i><span class="title">Parceiros</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="interna.html" class="big-title">
-                            <i class="icon-business"></i><span class="title">Quem somos?</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contato.html">
-                            <i class="icon-chat"></i><span class="title">Contato</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
-
+{% extends 'base.html' %}
+{% block content %}
     <!-- Destaque - Foto -->
     <div class="row-fluid destaque-photo">
         <div class="container">
@@ -107,7 +27,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row-fluid bg-blue">
             <div class="container caracter pag">
                 <div class="row-fluid">
@@ -119,7 +39,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row-fluid bg-blue-dark">
             <div class="container caracter valor relative">
                 <div class="row-fluid">
@@ -239,7 +159,7 @@
                     <span class="button"></span>
                     <div class="box">
                         <p class="title">Atendimento e Evolução</p>
-                        <p class="desc">Oferecemos atendimento e suporte ao cliente via Telefone, Skype, Chat e E-mail, sempre disposto a ouvi-los e satisfazer suas necessidades. 
+                        <p class="desc">Oferecemos atendimento e suporte ao cliente via Telefone, Skype, Chat e E-mail, sempre disposto a ouvi-los e satisfazer suas necessidades.
                         </p>
                         <p class="desc">Um sistema não engessado que conta com profissionais de TI exclusivos para colocar em prática as necessidades de nossos clientes e do mercado.
                         </p>
@@ -262,36 +182,4 @@
 
         </div>
     </div>
-
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <div class="row-fluid">
-            <div class="container">
-            
-                <div class="pull-right">
-                    <!-- Info -->
-                    <p class="size-medium">Fale Conosco</p>
-                    <p class="size-big color-yellow">+55 31 25 26 26 23</p>
-                    <p class="size-normal color-blue-claro">Seg a Sex 9h às 18h</p>
-                    <p class="email size-medium color-white"><a href="mailto:contato@viajacom.com">contato@viajacom.com</a></p>
-                </div>
-            
-                <!-- Logo -->
-                <div class="pull-left">
-                    <div class="produtoby">
-                        <p class="size-small color-blue-claro">Produto feito por</p>
-                        <a href="http://www.intip.com.br/" target="_blank" class="logo-intip"></a>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </footer>
-
-    <!-- Javascript -->
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/javascripts.js"></script>
-
-</body>
-</html>
+{% endblock %}

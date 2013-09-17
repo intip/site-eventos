@@ -20,6 +20,7 @@ urlpatterns = patterns(
 
     # Uncomment the next line to enable the admin:
     url(r'^$', include('core.urls', namespace="core")),
+    url(r'^(?P<page>\w+)/$', 'core.views.pages', name='pages'),
     url(r'^admin/', include(admin.site.urls)),
 )
 

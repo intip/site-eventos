@@ -1,56 +1,6 @@
-<!doctype html>
-<html>
-<head>
+{% extends 'base.html' %}
 
-    <meta charset="utf-8">
-    <title>Viajacom | Eventos - O melhor sistema de eventos para qualquer empresa de agências</title>
-
-    <!-- CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,700,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/cube.css" />
-    <link rel="stylesheet" type="text/css" href="css/software.css" />
-    <link rel="stylesheet" type="text/css" href="css/sprite.css" />
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
-
-    <!--[if gte IE 9]>
-      <style type="text/css">
-        .btn {
-           filter: none;
-        }
-      </style>
-    <![endif]-->
-
-</head>
-<body>
-
-    <!-- Contato Fixo -->
-    <a href="contato.html" class="fixed-contato">
-        <p>Fale com um consultor <i class="icon-arrow-btn icon-white"></i></p>
-    </a>
-
-    <!-- Topo -->
-    <header class="topo">
-        <div class="container">
-
-            <!-- Logo -->
-            <div class="logo-viaja pull-left">
-                <span class="logo pull-left"></span>
-                <span class="title">Eventos</span>
-            </div>
-
-            <!-- Navegação - Fixo -->
-            <nav class="menu">
-                <ul>
-                    <li class="selected"><a href="#"><i class="icon-home"></i><span class="title">Home</span></a></li>
-                    <li><a href="#"> <i class="icon-cart"></i><span class="title">Produto</span></a></li>
-                    <li><a href="#"> <i class="icon-clientes"></i><span class="title">Cliente</span></a></li>
-                    <li><a href="#"> <i class="icon-chat"></i><span class="title">Contato</span></a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
+{% block content %}
 
     <!-- Breadcrumb -->
     <div class="row-fluid bcrumb">
@@ -102,39 +52,4 @@
         </div>
     </div>
 
-    <!-- Rodapé -->
-    <footer class="rodape">
-        <div class="row-fluid">
-            <div class="container">
-            
-                <div class="pull-right">
-                    <!-- Info -->
-                    <p class="size-medium">Fale Conosco</p>
-                    <p class="size-big color-yellow">+55 31 25 26 26 23</p>
-                    <p class="size-normal color-blue-claro">Seg a Sex 9h às 18h</p>
-                    <p class="email size-medium color-white"><a href="mailto:contato@viajacom.com">contato@viajacom.com</a></p>
-                </div>
-            
-                <!-- Logo -->
-                <div class="pull-left">
-                    <div class="produtoby">
-                        <p class="size-small color-blue-claro">Produto feito por</p>
-                        <a href="http://www.intip.com.br/" target="_blank" class="logo-intip"></a>
-                    </div>
-                </div>
-            
-            </div>
-        </div>
-    </footer>
-
-    <!-- Javascript -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/javascript.js"></script>
-
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "4df9c63f-840e-469d-972c-a1d559ef94c9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-
-</body>
-</html>
+{% endblock %}

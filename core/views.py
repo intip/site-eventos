@@ -17,6 +17,15 @@ def homepage(request):
     """
 
     return render_to_response(
-        'hello.html',
+        'index.html',
+        context_instance=RequestContext(request)
+    )
+
+
+def pages(request, page):
+    """
+    """
+    return render_to_response(
+        page + ".html",
         context_instance=RequestContext(request)
     )
