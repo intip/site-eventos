@@ -12,7 +12,7 @@ TEMPLATE_DEBUG = DEBUG
 DEFAULT_FROM_EMAIL = "no-reply@intip.com.br"
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+    ('Guilherme', 'guilhermevierno@gmail'),
 )
 
 MANAGERS = (
