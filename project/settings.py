@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     'core',
 
     # third apps
+    'gunicorn',
     'south',
     'django_extensions',
     'django.contrib.admin',
