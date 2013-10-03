@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/software.css" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/sprite.css" />
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/estilos.css" />
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/chosen.min.css" />
 
     <!--[if gte IE 9]>
       <style type="text/css">
@@ -111,6 +112,9 @@
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "4df9c63f-840e-469d-972c-a1d559ef94c9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    {% block javascript %}
+    {% endblock %}
 
 </body>
 </html>

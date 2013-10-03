@@ -21,12 +21,25 @@
         </div>
     </div>
 
+    <!-- Logotipo clientes -->
+    <div class="row-fluid bg-gray logotipos">
+        <div class="container">
+            bonitoway + brasiltotal + viptour
+
+            <div class="row-fluid desc-icon">
+                asd
+            </div>
+
+        </div>
+    </div>
+
     <!-- Características -->
     <div class="caracteristicas">
+
         <div class="row-fluid bg-blue-dark">
             <div class="container caracter hoteis">
                 <div class="row-fluid">
-                    <h3><a href="interna.html">Características</a></h3>
+                    <h3><a href="interna.html">Como funciona?</a></h3>
                     <div class="zoom-software"></div>
                     <div class="desc pull-left">
                         <h4>E-commerce de Eventos Integrado no seu site</h4>
@@ -80,7 +93,9 @@
                                 O sistema atende muito minhas expectativas. Não tinha vendas online, e é um diferencial e uma evolução para meu negócio
                             </div>
                             <div class="bg-de-logo">
-                                <span class="logo-cliente"></span>
+                                <span class="logo-cliente bway">
+                                    <img src="{{ STATIC_URL }}imgs/bonitoway.png" alt="BonitoWay">
+                                </span>
                             </div>
                             <div class="box-arrow"></div>
                             <div class="photo-circle">
@@ -88,7 +103,7 @@
                             </div>
                             <div class="de-id pull-left">
                                 <p>Fulano ????</p>
-                                <a href="#">
+                                <a href="http://www.bonitoway.com.br/" target="_blank">
                                     <strong>BonitoWay</strong><small>.com.br</small>
                                 </a>
                             </div>
@@ -101,7 +116,9 @@
                                 O sistema é completo e atende a todas minhas necessidades, é muito fácil efetuar uma venda. E é muito simples a gestão do seu conteúdo
                             </div>
                             <div class="bg-de-logo">
-                                <span class="logo-cliente"></span>
+                                <span class="logo-cliente btotal">
+                                    <img src="{{ STATIC_URL }}imgs/brasiltotal.png" alt="BrasilTotal">
+                                </span>
                             </div>
                             <div class="box-arrow"></div>
                             <div class="photo-circle">
@@ -109,8 +126,8 @@
                             </div>
                             <div class="de-id pull-left">
                                 <p>Fulano ????</p>
-                                <a href="#">
-                                    <strong>Brasil Total</strong><small>.com.br</small>
+                                <a href="http://www.brasiltotal.com.br/" target="_blank">
+                                    <strong>BrasilTotal</strong><small>.com.br</small>
                                 </a>
                             </div>
                         </div>
@@ -133,9 +150,6 @@
                             </div>
                             <div class="de-id pull-left">
                                 <p>Fulano ????</p>
-                                <a href="#">
-                                    <strong>VIP Tour</strong><small> ? </small>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -160,8 +174,11 @@
                     <span class="button"></span>
                     <div class="box">
                         <p class="title">Segurança</p>
-                        <p class="desc">Todas suas informações de acesso ao sistema são criptografadas.</p>
-                        <p class="desc">Você e seu cliente contam  com a total segurança oferecida pelos sistemas de pagamentos e recebimentos online do PagSeguro e Paypal.</p>
+                        <div class="desc">
+                            <p>Todas suas informações de acesso ao sistema são criptografadas.</p>
+                            <p>Você e seu cliente contam  com a total segurança oferecida pelos sistemas de pagamentos e recebimentos online do PagSeguro e Paypal.</p>
+                            <p>Você tem a garantia do recebimento da venda e seu cliente tem a garantia do recebimento da compra.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -169,10 +186,12 @@
                     <span class="button"></span>
                     <div class="box">
                         <p class="title">Atendimento e Evolução</p>
-                        <p class="desc">Oferecemos atendimento e suporte ao cliente via Telefone, Skype, Chat e E-mail, sempre disposto a ouvi-los e satisfazer suas necessidades.
-                        </p>
-                        <p class="desc">Um sistema não engessado que conta com profissionais de TI exclusivos para colocar em prática as necessidades de nossos clientes e do mercado.
-                        </p>
+                        <div class="desc">
+                            <p>Exclusivo para os clientes do Eventos Viajacom fornecemos atendimento e suporte ao cliente via Telefone, Skype, Chat e E-mail, sempre disposto a ouvi-los e satisfazer suas necessidades.
+                            </p>
+                            <p>Um sistema não engessado que conta com profissionais de TI exclusivos para colocar em prática as necessidades de nossos clientes e do mercado.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -180,7 +199,9 @@
                     <span class="button"></span>
                     <div class="box">
                         <p class="title">Otimização de vendas</p>
-                        <p class="desc">O sistema integra a seu site vendas online e automatizadas, que oferecerá mais conforto e segurança à você e seus clientes, otimizando suas vendas e reduzindo custos e mão de obra nas vendas.</p>
+                        <div class="desc">
+                            <p>O sistema integra a seu site vendas online e automatizadas, que oferecerá mais conforto e segurança à você e seus clientes, otimizando suas vendas e reduzindo custos e mão de obra nas vendas.</p>
+                        </div>
                     </div>
                 </div>
 

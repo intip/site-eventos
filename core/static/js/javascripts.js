@@ -20,8 +20,8 @@ jQuery(function(){
     );
 
     // Parallax
-    mseg = $(".caracteristicas").position().top;
-    mter = $(".clientes").position().top;
+    //mseg = $(".caracteristicas").position().top;
+    //mter = $(".clientes").position().top;
 
     function Move(){
 
@@ -31,7 +31,7 @@ jQuery(function(){
             'top': -pos / 2
         });
 
-        if (pos >= 0) {
+       /* if (pos >= 0) {
             $(".menu li.selected").removeClass();
             $(".menu a[data-scroll='topo']").parent().addClass("selected");
         }
@@ -42,7 +42,7 @@ jQuery(function(){
         if (pos >= mter) {
             $(".menu li.selected").removeClass();
             $(".menu a[data-scroll='clientes']").parent().addClass("selected");
-        }
+        } */
 
     }
 

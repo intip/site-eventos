@@ -7,8 +7,8 @@ from contact_form.forms import ContactForm
   Campo de select para 'Assunto'
 """
 subjects = (
-    (u'0', u'Experimentar o sistema'),
-    (u'1', u'Fazer plano'),
+    (u'0', u'Quero testar o sistema'),
+    (u'1', u'Quero comprar'),
     (u'3', u'Dúvida'),
     (u'4', u'Outros'),
   )
@@ -17,7 +17,7 @@ subjects = (
   Como de select para 'Como nos encontrou?'
 """
 founds = (
-    (u'0', u'Sites de buscas (Google, Blings, etc.)'),
+    (u'0', u'Sites de buscas (Google, Bing, etc.)'),
     (u'1', u'Indicação'),
     (u'3', u'E-mail'),
     (u'4', u'Outros'),
@@ -28,7 +28,7 @@ class EventsContactForm(ContactForm):
                            label=u'Nome')
     email = forms.EmailField(max_length=200,
                              label=u'E-mail')
-    body = forms.CharField(widget=forms.Textarea(attrs={'rows': '11'}),
+    body = forms.CharField(widget=forms.Textarea(attrs={'rows': '10'}),
                            label=u'Mensagem')
     company = forms.CharField(max_length=100,
                               label=u'Empresa')

@@ -16,6 +16,8 @@ h2 {font-size: 20px; line-height: 25px; font-weight: 200; text-shadow:1px 1px #0
 h3 {font-size: 40px; font-weight: 300}
 h4 {font-size: 30px; font-weight: 300}
 
+h1 a, h2 a, h3 a, h4 a {text-decoration: none}
+
     /* -- Cores da fonte -- */
 .color-blue {color: #1068BB}
 .color-blue-claro {color: #62AAF4}
@@ -30,11 +32,23 @@ h4 {font-size: 30px; font-weight: 300}
 .size-normal {font-size: 16px}
 
     /* -- Formulário -- */
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {border:4px #EDEDED solid; box-shadow: inset 0 0 2px #999; padding:8px 10px }
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input, .chosen-container-single .chosen-single, .chosen-drop {border:4px #EDEDED solid; border-radius:5px; box-shadow: inset 0 0 2px #999; padding:8px 10px }
+
+.chosen-container {margin-bottom: 10px;}
+.chosen-container, .chosen-container-single .chosen-single {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color:#666;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.chosen-container-single .chosen-single:hover, input:hover {background:#fafafa;}
 
     /* -- Fundo -- */
 .bg-blue {background-color: #1068BB}
 .bg-blue-dark {background-color: #094C8D}
+.bg-blue-dark h3 a, .bg-blue-dark h3 a:link, .bg-blue-dark h3 a:visited {color:#fff;}
+.bg-blue-dark h3 a:hover {color:#FED300;}
 .bg-gray {background: url(../imgs/bg-gray.png)}
 .bg-black {background: url(../imgs/bg-black.png)}
 
@@ -121,8 +135,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .destaque-photo .btn {margin-bottom: 25px}
 .destaque-photo ~ * {z-index: 1; position: relative}
 
+/* -- Logotipos -- */
+.logotipos {margin-top: 426px; padding:40px 0; border-top:3px #999 solid}
+
+/* -- Texto + Icones -- */
+.desc-icon {margin-top: 30px; color:#666;}
+
 /* -- Características -- */
-.caracteristicas {z-index:1; position: relative; margin-top: 426px}
+.caracteristicas {z-index:1; position: relative}
 .caracter .row-fluid {padding:30px 0}
 .caracter .btn {margin:10px 0 60px 0}
 .caracter h3 {color: #fff; margin-bottom: 30px}
@@ -133,6 +153,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .zoom-software {float: left}
 .entrar {margin-top: 40px}
 .entrar .zoom-software {margin-top: -40px}
+.hoteis .zoom-software {margin-top: -35px}
 .checkout {margin-top: 20px}
 .checkout .zoom-software {margin-top: -20px}
 
@@ -146,6 +167,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .depoimento .box-arrow {width:27px; margin-left:10px; float: left}
 .depoimento .photo-circle {border-radius: 60px; width: 80px; height: 80px; float: left; border:3px #fff solid; overflow: hidden; box-shadow:0 3px 5px rgba(0,0,0,0.2); margin: 15px 23px 0 -10px}
 .depoimento .bg-de-logo {margin: -14px 9px 0 0; float: right}
+.depoimento .logo-cliente {float: left}
+.depoimento .logo-cliente.bway {margin:32px 0 0 45px}
+.depoimento .logo-cliente.btotal {margin:50px 0 0 39px}
 .depoimento .de-id {margin-top: 37px}
 .depoimento .de-id p {font-size:20px; margin: 0}
 .depoimento .de-id a {font-size:20px; color: #666}
@@ -188,6 +212,7 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .form-contato textarea {width:590px}
 .form-contato label {font-size: 19px; font-weight:lighter;}
 .form-contato .btn {margin-left: 175px;}
+.form-contato select {width:299px;}
 .ss-required-asterisk {color:red;}
 
 /* -- Rodapé -- */
