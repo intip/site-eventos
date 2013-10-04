@@ -12,7 +12,7 @@ body {color: #666; overflow-x:hidden; font-family: "Titillium Web", sans-serif; 
     /* -- Títulos -- */
 h1 {font-size: 45px; line-height: 50px; font-weight: 300; text-shadow:1px 1px #000}
 h1 strong {font-weight: 600}
-h2 {font-size: 20px; line-height: 25px; font-weight: 200; text-shadow:1px 1px #000}
+h2 {font-size: 20px; line-height: 25px; font-weight: 200}
 h3 {font-size: 40px; font-weight: 300}
 h4 {font-size: 30px; font-weight: 300}
 
