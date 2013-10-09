@@ -20,10 +20,10 @@
 }
 
 .pag .zoom-software {
-  background: url(../imgs/software.png) -465px -292px no-repeat;
-  display: inline-block;
+  background:url(../imgs/sprite-new.png) no-repeat -14px -830px;
   width: 463px;
-  height: 259px;
+  height: 250px;
+  display: inline-block;
 }
 
 .valor .zoom-software {
