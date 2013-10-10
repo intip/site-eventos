@@ -232,6 +232,15 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 
 .associados p{font-size:24px;margin:40px 0;}
 .abradi{background: url('../imgs/sprite-new.png') no-repeat -16px -291px;width: 134px;height: 67px;}
+/* -- Feature --*/
+.icon-cloud{background: url('../imgs/sprite-new.png') no-repeat -13px -14px;width: 55px;height: 48px;margin:0 auto;display: block;}
+.icon-time{background: url('../imgs/sprite-new.png') no-repeat -15px -128px;width: 51px;height: 48px;margin:0 auto;display: block;}
+.icon-sales{background: url('../imgs/sprite-new.png') no-repeat -13px -69px;width: 55px;height: 48px;margin:0 auto;display: block;}
+.feature-top{padding:100px 0;border-top:3px solid #1569b5;}
+.feature-top h3{color:#FED300;font-size:30px;text-align: center;}
+.feature-top p{color:#fff;font-size:20px;font-weight: 400;text-align: center;line-height:24px;}
+
+.shadow-blocks{background:url(../imgs/shadow-1195.png) repeat;width:100%;height:135px;position: absolute;left:0;top:0;z-index:50;}
 @media (max-width:1250px) {
 
     .share {position: static; float: left; width:900px; border-radius: 20px; margin-top: 40px; height: 24px; }
