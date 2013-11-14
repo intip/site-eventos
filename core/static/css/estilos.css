@@ -103,12 +103,12 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .cube-gray2 {top:550px; right: -210px}
 
 /* -- Contato fixo - Fale com consultor -- */
-.fixed-contato {color:#fff; font-weight: bolder; font-size:17px; position: fixed; bottom:0; right: 10px; z-index: 900; background: #0967C1; box-shadow: 0px 0px 15px rgba(0,0,0,0.5); border-radius: 10px 10px 0 0; padding: 15px 25px 3px 25px; border:1px #fff solid; border-bottom:0}
+.fixed-contato {color:#444; font-weight: 600; font-size:17px; position: fixed; bottom:0; right: 10px; z-index: 900; background: #FBD200; box-shadow: 0px 0px 15px rgba(0,0,0,0.5); border-radius: 10px 10px 0 0; padding: 15px 25px 3px 25px; border:2px #444 solid; border-bottom:0}
 .fixed-contato .icon-arrow-btn {margin-left: 20px;}
-.fixed-contato:hover {color:#fff}
+.fixed-contato:hover {color:#0967C1;text-decoration: none;}
 
 /* -- Topo -- */
-.topo {position: relative; z-index:1; background: #fff}
+.topo {position: fixed; z-index:100; background: #fff; width:100%;border-bottom:5px solid #FED300;}
 .topo .container {padding: 15px 0; position: relative}
 .logo-viaja .title {font-size: 50px; font-weight:700; float: left; margin: 27px 0 0 18px; color: #1068BB}
 .menu {float:right; margin: -14px 0 0 0; background: #fff; border-radius:0 0 10px 15px}
@@ -138,7 +138,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* -- Coluna Destaques --*/
 
 /* -- Logotipos -- */
-.logotipos {margin-top: 426px; padding:40px 0; border-top:3px #999 solid}
+.logotipos {margin-top: 520px; padding:40px 0; border-top:3px #999 solid}
 
 /* -- Texto + Icones -- */
 .desc-icon {margin-top: 30px; color:#666;}
