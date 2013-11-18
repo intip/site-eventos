@@ -49,8 +49,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .bg-blue-dark {background-color: #094C8D}
 .bg-blue-dark h3 a, .bg-blue-dark h3 a:link, .bg-blue-dark h3 a:visited {color:#fff;}
 .bg-blue-dark h3 a:hover {color:#FED300;}
-.bg-gray {background: url(../imgs/bg-gray.png)}
+.bg-gray {background:#666;}
 .bg-black {background: url(../imgs/bg-black.png)}
+.bg-gray-dark {background:#444;}
 
     /* -- Botão -- */
 .btn {border-radius: 35px; border:0; padding:13px 30px 15px 30px; font-size: 19px; text-shadow:none; font-weight: 600; box-shadow:0px 2px rgba(0,0,0,0.2)}
@@ -97,7 +98,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* -- Cubos Texture -- */
 .cubes .container {position: relative}
 .cube-blue1, .cube-blue2, .cube-yellow1, .cube-yellow2, .cube-gray1, .cube-gray2 {position: absolute; z-index:2}
-.cube-blue1 {top:-240px; left:-270px}
+.cube-blue1 {top:-240px; left:-350px}
 .cube-yellow1 {top:-110px; left: -230px}
 .cube-yellow2 {top:211px; right:-368px}
 .cube-gray2 {top:550px; right: -210px}
@@ -196,6 +197,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .detail-icon .title {font-size: 32px; text-align: center; margin: 30px 0; line-height: 34px}
 .detail-icon .desc {font-size: 16px; text-align: left}
 .detail-icon .button {margin-bottom: -50px}
+.title-clients{margin-top:40px !important;}
 
     /* -- Cores -- */
 .detail-icon.seguranca .title {color: #1068BB}
@@ -220,6 +222,12 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .form-contato select {width:299px;}
 .ss-required-asterisk {color:red;}
 
+/* -- Quem Somos -- */
+.quem-somos {position: relative;}
+.quem-somos .logo-intip-ok{position:absolute;right:0;top:-22px;}
+.quem-somos .span12{margin-left:0;}
+/* -- Quem Somos -- */
+
 /* -- Rodapé -- */
 .rodape a {color:#fff}
 .rodape .pull-right p {margin:0 0 15px 0}
@@ -243,6 +251,146 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .feature-top p{color:#fff;font-size:20px;font-weight: 400;text-align: center;line-height:24px;}
 
 .shadow-blocks{background:url(../imgs/shadow-1195.png) repeat;width:100%;height:135px;position: absolute;left:0;top:0;z-index:50;}
+/** Jcarousel **/
+.jcarousel{
+    background:#fff;
+}
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    width: 200px !important;
+    float: left;
+    border: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 150px;
+    text-align : center;
+}
+
+.jcarousel img {
+    vertical-align : middle;
+    margin-top:50px;
+    
+}
+.jcarousel img.top-reset {
+    margin-top:35px;
+}
+.jcarousel li:first-child img{
+    margin-left:20px;
+}
+.jcarousel-pagination{
+    display: none;
+}
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #4E443C;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 4px #F0EFE7;
+    -moz-box-shadow: 0 0 4px #F0EFE7;
+    box-shadow: 0 0 4px #F0EFE7;
+    z-index:200;
+}
+
+.jcarousel-control-prev {
+    left:-55px;
+}
+.jcarousel-control-prev:hover {
+    color:#FBD200;
+    text-decoration: none;
+}
+.jcarousel-control-next {
+    right:-55px;
+}
+.jcarousel-control-next:hover {
+    color:#FBD200;
+    text-decoration: none;
+}
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    margin: 0;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+
+    font-size: 11px;
+    height: 10px;
+    width: 10px;
+    line-height: 10px;
+
+    background: #fff;
+    color: #4E443C;
+    border-radius: 10px;
+    text-indent: -9999px;
+
+    margin-right: 7px;
+
+
+    -webkit-box-shadow: 0 0 2px #4E443C;
+    -moz-box-shadow: 0 0 2px #4E443C;
+    box-shadow: 0 0 2px #4E443C;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+
+    -webkit-box-shadow: 0 0 2px #F0EFE7;
+    -moz-box-shadow: 0 0 2px #F0EFE7;
+    box-shadow: 0 0 2px #F0EFE7;
+}
 @media (max-width:1250px) {
 
     .share {position: static; float: left; width:900px; border-radius: 20px; margin-top: 40px; height: 24px; }
