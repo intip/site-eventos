@@ -111,6 +111,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .topo {position: fixed; z-index:100; background: #fff; width:100%;border-bottom:5px solid #FED300;}
 .topo .container {padding: 15px 0; position: relative}
 .logo-viaja .title {font-size: 50px; font-weight:700; float: left; margin: 27px 0 0 18px; color: #1068BB}
+.logo-viaja .title a{color:#1068BB;}
+.logo-viaja .title a:hover{text-decoration: none;color:#FBD200;}
 .menu {float:right; margin: -14px 0 0 0; background: #fff; border-radius:0 0 10px 15px}
 .cubes ~ .topo .menu {position: fixed; top:0; right:50px; padding:0 35px 12px 35px; margin:0}
 .menu ul, .menu li:first-child a {margin-left:0}
@@ -201,7 +203,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .detail-icon.gestao .title {color: #227D00}
 
 /* -- Interna -- */
-.share {position:fixed; left:0; top:345px; width: 100px; padding:15px 20px; background:#f8f8f8; border-radius:0 20px 20px 0}
+.share {position:fixed; left:0; top:345px; width: 100px; padding:15px 20px; background:#f8f8f8; border-radius:0 20px 20px 0;z-index:100;}
 .share p {font-size: 16px; font-weight:400;}
 img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .interna {margin:40px auto 70px auto}
