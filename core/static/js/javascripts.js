@@ -50,4 +50,34 @@ jQuery(function(){
         Move();
     });
 
+    var topArticle;
+     //Define o tamanho da estrutura.
+    $('.link-home').click(function () {
+         topArticle = 0;
+         $('html, body').stop().animate({
+             scrollTop: topArticle
+         }, 2000);
+     });
+
+    $('.link-produto').click(function () {
+         topArticle = 800;
+         $('html, body').stop().animate({
+             scrollTop: topArticle
+         }, 2000);
+     });
+
+    $('.link-quem').click(function () {
+         topArticle = 1960;
+         $('html, body').stop().animate({
+             scrollTop: topArticle
+         }, 2000);
+     });
+
+    $('.link-contato').click(function () {
+         topArticle = 1800;
+         $('html, body').stop().animate({
+             scrollTop: topArticle
+         }, 2000);
+     });
+
 });
