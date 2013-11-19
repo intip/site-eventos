@@ -104,9 +104,14 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .cube-gray2 {top:550px; right: -210px}
 
 /* -- Contato fixo - Fale com consultor -- */
-.fixed-contato {color:#444; font-weight: 600; font-size:17px; position: fixed; bottom:0; right: 10px; z-index: 900; background: #FBD200; box-shadow: 0px 0px 15px rgba(0,0,0,0.5); border-radius: 10px 10px 0 0; padding: 15px 25px 3px 25px; border:2px #444 solid; border-bottom:0}
-.fixed-contato .icon-arrow-btn {margin-left: 20px;}
-.fixed-contato:hover {color:#0967C1;text-decoration: none;}
+.fixed-contato {width:222px;color:#444; font-weight: 600; font-size:17px; position: fixed; bottom:0; right: 10px; z-index: 900; background: #FBD200; box-shadow: 0px 0px 15px rgba(0,0,0,0.5); border-radius: 10px 10px 0 0; padding: 15px 25px 3px 25px; border:2px #444 solid; border-bottom:0}
+.fixed-contato .icon-arrow-btn {margin-left: 20px;float:right;cursor:pointer;}
+.fixed-contato .icon-arrow-btn:hover {opacity:0.8}
+.fixed-contato .icon-arrow-btn.active{background-position:-309px -377px;width:30px;height:30px;}
+.fixed-contato .span5{margin-right:30px;}
+.fixed-contato label{font-weight: bold;}
+.fixed-contato .form-bot{display: none;}
+
 
 /* -- Topo -- */
 .topo {position: fixed; z-index:100; background: #fff; width:100%;border-bottom:5px solid #FED300;}
@@ -115,7 +120,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .logo-viaja .title a{color:#1068BB;}
 .logo-viaja .title a:hover{text-decoration: none;color:#FBD200;}
 .menu {float:right; margin: -14px 0 0 0; background: #fff; border-radius:0 0 10px 15px}
-.cubes ~ .topo .menu {position: fixed; top:0; right:50px; padding:0 35px 12px 35px; margin:0}
+.cubes .topo .menu {position: fixed; top:0; right:50px; padding:0 35px 12px 35px; margin:0}
 .menu ul, .menu li:first-child a {margin-left:0}
 .menu li {display: inline}
 .menu a {color:#1068BB; text-decoration:none; font-size: 18px; float: left; margin:13px 0 0 40px; text-align: center}
