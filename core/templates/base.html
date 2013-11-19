@@ -42,9 +42,43 @@
 
     {% block contato %}
     <!-- Contato Fixo -->
-    <a href="/contato/" class="fixed-contato">
+    <div class="fixed-contato">
         <p>Fale com um consultor <i class="icon-arrow-btn"></i></p>
-    </a>
+
+        <div class="clear"></div>
+        <div class="form-bot">
+            <div class="row-fluid">
+                <div class="span5">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Type something…">
+                </div>
+                <div class="span5">
+                    <label>E-mail</label>
+                    <input type="text" placeholder="Type something…">
+                </div>
+            </div>
+
+            <div class="row-fluid">
+                <div class="span5">
+                    <label>Telefone</label>
+                    <input type="text" placeholder="Type something…">
+
+                </div>
+                <div class="span5">
+                    <label>Assunto</label>
+                    <input type="text" placeholder="Type something…">
+                </div>
+
+                <div class="span11">
+                    <textarea></textarea>
+                </div>
+
+                <div class="span11">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </div>
+    </div>
     {% endblock %}
 
     <!-- Topo -->
