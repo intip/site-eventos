@@ -50,6 +50,27 @@ jQuery(function(){
         Move();
     });
 
+
+    $('.icon-arrow-btn').click(function(){
+
+        if($(this).hasClass('active')){
+            $('.form-bot').fadeOut(100)
+            $(this).removeClass('active');
+            $('.fixed-contato').animate({"height": "35px"}, "fast");
+            $('.fixed-contato').animate({"width": "222px"}, "fast");
+        }else{
+           $(this).addClass('active');
+           $('.fixed-contato').animate({"height": "500px"}, "fast");
+           $('.fixed-contato').animate({"width": "550px"}, "fast"); 
+
+           setTimeout(function() {
+                $('.form-bot').fadeIn(100)
+           }, 500);
+           
+        }
+    });
+
+
     var topArticle;
      //Define o tamanho da estrutura.
     $('.link-home').click(function () {
