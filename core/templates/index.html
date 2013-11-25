@@ -20,25 +20,83 @@
         </div>
     </div>
 
-    <!-- Logotipo clientes -->
+    <!-- Clientes Topo -->
+    <div class="row-fluid clientes-topo">
+        <div class="container">
+            <div class="span12">
+                <div class="jcarousel-wrapper carousel-turismo">
+                    <div class="jcarousel">
+                        <ul>
+                            <li>
+                                <img src="{{ STATIC_URL }}imgs/logo_turismo/bonitoway.jpg" width="127" height="100" class="left" alt="">
+                            </li>
+
+                            <li>
+                                <img src="{{ STATIC_URL }}imgs/logo_turismo/allbrasil.jpg" width="188" height="100" alt="" class="top-reset">
+                            </li>
+
+                            <li>
+                                <img src="{{ STATIC_URL }}imgs/logo_turismo/brasil-total.jpg" width="169" height="100" alt="" class="mgr-left">
+                            </li>
+
+                            <li>
+                                <img src="{{ STATIC_URL }}imgs/logo_turismo/studio.jpg" width="127" height="65" alt="">
+                            </li>
+                            <li>
+                                <img src="{{ STATIC_URL }}imgs/logo_turismo/trips.jpg" width="169" height="65" alt="">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a> -->
+
+                    <p class="jcarousel-pagination"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Apresentação -->
     <div class="row-fluid bg-blue-dark logotipos feature-top relative">
         <div class="shadow-blocks"></div>
         <div class="container">
-           <div class="span4">
-                <div class="icon-cloud"></div>
-                <h3>Nuvem</h3>
-                <p>Desfrute tudo que o sistema tem-lhe a oferecer de qualquer lugar do mundo!</p>
-           </div>
-           <div class="span4">
-                <div class="icon-time"></div>
-                <h3>Tempo</h3>
-                <p>Não perca horas com complicações, gerencie seu conteúdo de forma muito fácil.</p>
-           </div>
-           <div class="span4">
-                <div class="icon-sales"></div>
-                <h3>Vendas</h3>
-                <p>Conte com diversos gatways de pagamento, faça vendas rápidas e seguras.</p>
-           </div>
+            <div class="row">
+               <div class="span4">
+                    <div class="icon-cloud"></div>
+                    <h3>Nuvem</h3>
+                    <p>Desfrute tudo que o sistema tem-lhe a oferecer de qualquer lugar do mundo!</p>
+               </div>
+               <div class="span4">
+                    <div class="icon-time"></div>
+                    <h3>Tempo</h3>
+                    <p>Não perca horas com complicações, gerencie seu conteúdo de forma muito fácil.</p>
+               </div>
+               <div class="span4">
+                    <div class="icon-sales"></div>
+                    <h3>Vendas</h3>
+                    <p>Conte com diversos gatways de pagamento, faça vendas rápidas e seguras.</p>
+               </div>
+            </div>
+
+            <div class="row presentation-top">
+               <div class="span4">
+                    <div class="icon-share"></div>
+                    <h3>Compartilhamento</h3>
+                    <p>Compartilhe os eventos nas redes socias. </p>
+               </div>
+               <div class="span4">
+                    <div class="icon-multiple"></div>
+                    <h3>Múltiplos</h3>
+                    <p>Crie e gerencie vários eventos.</p>
+               </div>
+               <div class="span4">
+                    <div class="icon-cart-two"></div>
+                    <h3>Carrinho</h3>
+                    <p>Sistema conta com carrinho de compra, o que permite mais conforto ao usuario.</p>
+               </div>
+            </div>
         </div>
     </div>
 
@@ -193,56 +251,86 @@
         </div>
     </div>
 
-    <!-- Benefícios -->
-    <div class="row-fluid bg-blue beneficios relative">
-        <div class="shadow-blocks"></div>
+    <!-- Cliente Satisfeitos -->
+    <div class="row-fluid bg-clear-gray clientes">
         <div class="container relative">
-            <div class="cube-blue1"></div>
-            <h3>Benefícios</h3>
-
+            <div class="cube-gray2"></div>
+            <h3>Clientes Satisfeitos</h3>
             <div class="row-fluid">
+                <div class="span6 col-a">
 
-                <div class="span4 detail-icon seguranca">
-                    <span class="button"></span>
-                    <div class="box">
-                        <p class="title">Segurança</p>
-                        <div class="desc">
-                            <p>Todas suas informações de acesso ao sistema são criptografadas.</p>
-                            <p>Você e seu cliente contam  com a total segurança oferecida pelos gateways de pagamentos online do PagSeguro e Paypal.</p>
-                            <p>Você tem a garantia do recebimento da venda e seu cliente tem a garantia do recebimento da compra.</p>
+                    <div class="row-fluid">
+                        <div class="span12 depoimento de-green">
+                            <div class="box">
+                                O sistema atende muito minhas expectativas. Não tinha vendas online, e é um diferencial e uma evolução para meu negócio
+                            </div>
+                            <div class="bg-de-logo">
+                                <span class="logo-cliente bway">
+                                    <img src="{{ STATIC_URL }}imgs/bonitoway.png" alt="BonitoWay">
+                                </span>
+                            </div>
+                            <div class="box-arrow"></div>
+                            <div class="photo-circle">
+                                <img src="imgs/woman.png" width="80" alt="">
+                            </div>
+                            <div class="de-id pull-left">
+                                <p>Fulano ????</p>
+                                <a href="http://www.bonitoway.com.br/" target="_blank">
+                                    <strong>BonitoWay</strong><small>.com.br</small>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="span4 detail-icon gestao">
-                    <span class="button"></span>
-                    <div class="box">
-                        <p class="title">Atendimento e Evolução</p>
-                        <div class="desc">
-                            <p>Exclusivo para os clientes do Eventos Viajacom fornecemos atendimento e suporte ao cliente via Telefone, Skype, Chat e E-mail, sempre disposto a ouvi-los e satisfazer suas necessidades.
-                            </p>
-                            <p>Um sistema não engessado que conta com profissionais de TI exclusivos para colocar em prática as necessidades de nossos clientes e do mercado.
-                            </p>
+                    <div class="row-fluid">
+                        <div class="span12 depoimento de-blue">
+                            <div class="box">
+                                O sistema é completo e atende a todas minhas necessidades, é muito fácil efetuar uma venda. E é muito simples a gestão do seu conteúdo
+                            </div>
+                            <div class="bg-de-logo">
+                                <span class="logo-cliente btotal">
+                                    <img src="{{ STATIC_URL }}imgs/brasiltotal.png" alt="BrasilTotal">
+                                </span>
+                            </div>
+                            <div class="box-arrow"></div>
+                            <div class="photo-circle">
+                                <img src="imgs/woman.png" width="80" alt="">
+                            </div>
+                            <div class="de-id pull-left">
+                                <p>Fulano ????</p>
+                                <a href="http://www.brasiltotal.com.br/" target="_blank">
+                                    <strong>BrasilTotal</strong><small>.com.br</small>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="span4 detail-icon conteudo">
-                    <span class="button"></span>
-                    <div class="box">
-                        <p class="title">Otimização de vendas</p>
-                        <div class="desc">
-                            <p>O sistema integra a seu site vendas online e automatizadas, que oferecerá mais conforto e segurança à você e seus clientes, otimizando suas vendas e reduzindo custos e mão de obra nas vendas.</p>
+                </div>
+                <div class="span6 col-b">
+
+                    <div class="row-fluid">
+                        <div class="span12 depoimento de-blue">
+                            <div class="box">
+                                Como empresário estou muito satisfeito, está sendo um grande diferencial. É muito fácil de acessar e implantar informações e compras
+                            </div>
+                            <div class="bg-de-logo">
+                                <span class="logo-cliente"></span>
+                            </div>
+                            <div class="box-arrow"></div>
+                            <div class="photo-circle">
+                                <img src="imgs/woman.png" width="80" alt="">
+                            </div>
+                            <div class="de-id pull-left">
+                                <p>Fulano ????</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-
-            <div class="row-fluid center">
-                <a href="/produto/" class="btn btn-yellow">Conheça mais o produto <i class="icon-arrow-btn"></i></a>
-            </div>
-
+            <!-- <div class="row-fluid center">
+                <a href="/parceiros/" class="btn btn-blue">Veja mais depoimentos <i class="icon-white icon-arrow-btn"></i></a>
+            </div> -->
         </div>
     </div>
 {% endblock %}

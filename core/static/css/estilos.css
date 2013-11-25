@@ -52,6 +52,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .bg-gray {background:#666;}
 .bg-black {background: url(../imgs/bg-black.png)}
 .bg-gray-dark {background:#444;}
+.bg-clear-gray{background:#dedede;}
 
     /* -- Botão -- */
 .btn {border-radius: 35px; border:0; padding:13px 30px 15px 30px; font-size: 19px; text-shadow:none; font-weight: 600; box-shadow:0px 2px rgba(0,0,0,0.2)}
@@ -128,6 +129,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .menu i {height: 51px; width: 46px !important; margin-bottom: 5px}
 .menu .title {display: block}
 .menu .big-title {margin:13px -7px 0 33px}
+.presentation-top{margin-top:60px;}
+
 
 .bcrumb {background:#ededed; margin-bottom: 10px;}
 .breadcrumb {background:none; font-size: 17px; margin:5px 0}
@@ -138,7 +141,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .h1-title h2 {color:#fff; margin-top: 0}
 
 /* -- Destaque - Foto -- */
-.destaque-photo {background: url(../imgs/destaque.jpg) center 52px; padding:171px 0 60px 0; text-align: center; position: fixed; top:0px}
+.destaque-photo {background: url(../imgs/destaque.jpg) center 52px; padding:171px 0 60px 0; text-align: center; top:0px}
 .destaque-photo h2 {margin: 30px 100px}
 .destaque-photo .btn {margin-bottom: 25px}
 .destaque-photo ~ * {z-index: 1; position: relative}
@@ -146,7 +149,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* -- Coluna Destaques --*/
 
 /* -- Logotipos -- */
-.logotipos {margin-top: 520px; padding:40px 0; border-top:3px #999 solid}
+.logotipos {padding:40px 0; border-top:3px #999 solid}
 
 /* -- Texto + Icones -- */
 .desc-icon {margin-top: 30px; color:#666;}
@@ -251,6 +254,9 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .icon-cloud{background: url('../imgs/sprite-new.png') no-repeat -13px -14px;width: 55px;height: 48px;margin:0 auto;display: block;}
 .icon-time{background: url('../imgs/sprite-new.png') no-repeat -15px -128px;width: 51px;height: 48px;margin:0 auto;display: block;}
 .icon-sales{background: url('../imgs/sprite-new.png') no-repeat -13px -69px;width: 55px;height: 48px;margin:0 auto;display: block;}
+.icon-share{background: url('../imgs/sprite-new.png') no-repeat -108px -10px;width: 53px;height: 53px;margin:0 auto;display: block;}
+.icon-multiple{background: url('../imgs/sprite-new.png') no-repeat -103px -86px;width: 68px;height: 47px;margin:0 auto;display: block;}
+.icon-cart-two{background: url('../imgs/sprite-new.png') no-repeat -192px -10px;width: 49px;height: 48px;margin:0 auto;display: block;}
 .feature-top{padding:100px 0;border-top:3px solid #1569b5;}
 .feature-top h3{color:#FED300;font-size:30px;text-align: center;}
 .feature-top p{color:#fff;font-size:20px;font-weight: 400;text-align: center;line-height:24px;}
@@ -268,13 +274,12 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-    -moz-box-shadow: 0 0 2px #999;
-    box-shadow: 0 0 2px #999;
 }
 
 /** Carousel **/
-
+.carousel-turismo{
+    margin-left: -30px;
+}
 .jcarousel {
     position: relative;
     overflow: hidden;
@@ -290,7 +295,7 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 }
 
 .jcarousel li {
-    width: 200px !important;
+    width: 190px !important;
     float: left;
     border: 1px solid #fff;
     -moz-box-sizing: border-box;
@@ -302,11 +307,14 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 
 .jcarousel img {
     vertical-align : middle;
-    margin-top:50px;
+    margin-top:30px;
     
 }
 .jcarousel img.top-reset {
     margin-top:35px;
+}
+.jcarousel img.mgr-left {
+    margin-left:30px;
 }
 .jcarousel li:first-child img{
     margin-left:20px;
