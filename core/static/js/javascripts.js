@@ -23,34 +23,6 @@ jQuery(function(){
     //mseg = $(".caracteristicas").position().top;
     //mter = $(".clientes").position().top;
 
-    function Move(){
-
-        var pos = $(window).scrollTop();
-
-        $(".destaque-photo").css({
-            'top': -pos / 2
-        });
-
-       /* if (pos >= 0) {
-            $(".menu li.selected").removeClass();
-            $(".menu a[data-scroll='topo']").parent().addClass("selected");
-        }
-        if (pos >= mseg) {
-            $(".menu li.selected").removeClass();
-            $(".menu a[data-scroll='caracteristicas']").parent().addClass("selected");
-        }
-        if (pos >= mter) {
-            $(".menu li.selected").removeClass();
-            $(".menu a[data-scroll='clientes']").parent().addClass("selected");
-        } */
-
-    }
-
-    $(window).bind('scroll', function(){
-        Move();
-    });
-
-
     $('.icon-arrow-btn').click(function(){
 
         if($(this).hasClass('active')){
@@ -81,7 +53,7 @@ jQuery(function(){
      });
 
     $('.link-produto').click(function () {
-         topArticle = 800;
+         topArticle = 1060;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 2000);
