@@ -141,11 +141,22 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .h1-title h2 {color:#fff; margin-top: 0}
 
 /* -- Destaque - Foto -- */
-.destaque-photo {background: url(../imgs/destaque.jpg) center 52px; padding:171px 0 60px 0; text-align: center; top:0px}
+.destaque-photo {background: url(../imgs/destaque-1920.jpg) center ;margin: 111px 0 0 0;text-align: center; top:0px;height:350px;}
 .destaque-photo h2 {margin: 30px 100px}
 .destaque-photo .btn {margin-bottom: 25px}
 .destaque-photo ~ * {z-index: 1; position: relative}
+.destaque-description {position: relative;}
+.destaque-description .shadow-white{position:absolute;left: -60px;top: -100px;z-index:1;background:url(../imgs/shadow-white.png) no-repeat;width:533px;height:476px;}
+.destaque-description h1{font-size:28px;position: relative;z-index:2;margin-top:85px;box-shadow: 0px 10px -14px 14px #FFF;text-shadow:2px 2px 1px #fff;font-weight: 600}
+.destaque-description .btn{position: relative;z-index:2;font-size:17px;}
+.destaque-description .girl-destaque{background:url(../imgs/girl.png) no-repeat;width:350px;height:335px;position: absolute;left:0;top:15px;}
 
+.form-top{margin-top:25px;background:#fff;height:325px;-webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.form-top h2{color:#333;font-size:22px;text-align: center;margin:20px 0 0px 0;}
+.form-top h3{color:#333;font-size:14px;text-align: center;margin:0;}
+.form-top .btn-blue{height:40px;font-size:17px;padding:9px 30px 15px 30px;margin-bottom:0;}
+.form-top .btn-blue .icon-arrow-btn{margin-top:0;}
+.form-top p{color:#fed202;font-size:30px;text-align: center;font-weight:600;}
 /* -- Coluna Destaques --*/
 
 /* -- Logotipos -- */
