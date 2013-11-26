@@ -53,6 +53,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .bg-black {background: url(../imgs/bg-black.png)}
 .bg-gray-dark {background:#444;}
 .bg-clear-gray{background:#dedede;}
+.bg-clear-gray-2{background:#ececec;}
 
     /* -- Botão -- */
 .btn {border-radius: 35px; border:0; padding:13px 30px 15px 30px; font-size: 19px; text-shadow:none; font-weight: 600; box-shadow:0px 2px rgba(0,0,0,0.2)}
@@ -210,7 +211,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* -- Benefícios -- */
 .beneficios .container {margin: 50px auto}
 .beneficios .btn {margin:50px 0 10px 0}
-.beneficios h3 {color:#FED300; margin:0 0 50px 0}
+.beneficios h3 {color:#333; margin:0 0 50px 0}
+.beneficios p{color:#333;}
+.beneficios p strong{color:#f7941d;}
 .detail-icon {text-align: center; margin-bottom: 10px}
 .detail-icon .box {border-radius:20px; background: #fff; padding: 30px 40px}
 .detail-icon .title {font-size: 32px; text-align: center; margin: 30px 0; line-height: 34px}
@@ -218,6 +221,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .detail-icon .button {margin-bottom: -50px}
 .title-clients{margin-top:40px !important;}
 
+.screenshots p{text-align: center;font-size:16px;margin:15px 0;}
     /* -- Cores -- */
 .detail-icon.seguranca .title {color: #1068BB}
 .detail-icon.conteudo .title {color: #B58700}
