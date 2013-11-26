@@ -135,6 +135,12 @@
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "4df9c63f-840e-469d-972c-a1d559ef94c9", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/chosen.jquery.js"></script>
+    <script>
+        $(function(){
+            $("select").chosen({disable_search_threshold: 10});
+        });
+    </script>
 
     {% block javascript %}
     {% endblock %}

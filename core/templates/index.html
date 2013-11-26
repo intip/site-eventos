@@ -180,7 +180,7 @@
             </div>
         </div>
     </div>
-    <!-- Quem Somos -->
+    <!-- Screenshots -->
     <div class="row-fluid beneficios bg-clear-gray-2  relative">
         <div class="shadow-blocks"></div>
         <div class="container relative caracter screenshots">
@@ -317,7 +317,7 @@
     </div>
 
     <!-- Cliente Satisfeitos -->
-    <div class="row-fluid bg-clear-gray clientes">
+    <div class="row-fluid bg-clear-gray-2 clientes">
         <div class="container relative">
             <div class="cube-gray2"></div>
             <h3>Clientes Satisfeitos</h3>
@@ -396,6 +396,81 @@
             <!-- <div class="row-fluid center">
                 <a href="/parceiros/" class="btn btn-blue">Veja mais depoimentos <i class="icon-white icon-arrow-btn"></i></a>
             </div> -->
+        </div>
+    </div>
+
+    <!-- Contato -->
+    <div class="row-fluid">
+        <div class="container interna">
+
+            <div class="center-title">
+                <h3>Experimente gratuitamente agora</h3>
+                <p>Envie-nos seu pedido de teste gratuito e confira esse incrível sistema para seu negócio. Envie também quaisquer dúvidas, teremos o maior prazer em atende-lo.</p>
+            </div>
+
+            <!-- Formulários -->
+            <div class="row-fluid form-contato">
+                <form action="" method="POST">
+                    <div class="span4">
+                        <div class="control-group">
+                            {{ form.name.label_tag }}
+                            {{ form.name.errors }}
+                            <div class="controls">
+                                {% csrf_token %}
+                                {{ form.name }}
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form.email.label_tag }}
+                            {{ form.email.errors }}
+                            <div class="controls">
+                                {{ form.email }}
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form.company.label_tag }}
+                            {{ form.company.errors }}
+                            <div class="controls">
+                                {{ form.company }}
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form.telephone.label_tag }}
+                            {{ form.telephone.errors }}
+                            <div class="controls">
+                                {{ form.telephone }}
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form.found.label_tag }}
+                            {{ form.found.errors }}
+                            <div class="controls">
+                                {{ form.found }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span8">
+                        <div class="control-group">
+                            {{ form.subject.label_tag }}
+                            {{ form.subject.errors }}
+                            <div class="controls">
+                                {{ form.subject }}
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            {{ form.body.label_tag }}
+                            {{ form.body.errors }}
+                            <div class="controls">
+                                {{ form.body }}
+                            </div>
+                        </div>
+                        <button type="submit" href="#" class="btn btn-green">
+                            Enviar <i class="icon-white icon-arrow-btn"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
 {% endblock %}
