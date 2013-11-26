@@ -49,28 +49,34 @@ jQuery(function(){
          topArticle = 0;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 2000);
+         }, 1000);
      });
 
     $('.link-produto').click(function () {
          topArticle = 1200;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 2000);
+         }, 1000);
      });
 
     $('.link-quem').click(function () {
          topArticle = 2890;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 2000);
+         }, 1000);
      });
 
     $('.link-contato').click(function () {
-         topArticle = 1800;
+         topArticle = 4500;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 2000);
+         }, 1000);
      });
+
+    // Menu active
+    $('.menu ul li a').click(function(){
+        $('.menu ul li a').removeClass('selected');
+        $(this).addClass('selected');
+    });
 
 });
