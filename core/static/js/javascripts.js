@@ -53,14 +53,14 @@ jQuery(function(){
      });
 
     $('.link-produto').click(function () {
-         topArticle = 1060;
+         topArticle = 1200;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 2000);
      });
 
     $('.link-quem').click(function () {
-         topArticle = 1960;
+         topArticle = 2890;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 2000);
