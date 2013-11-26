@@ -64,8 +64,8 @@
             <!-- Navegação - Fixo -->
             <nav class="menu">
                 <ul>
-                    <li class="selected">
-                        <a href="javascript:;" data-scroll="topo" class="link-home">
+                    <li>
+                        <a href="javascript:;" data-scroll="topo" class="link-home selected">
                             <i class="icon-home"></i><span class="title">Home</span>
                         </a>
                     </li>
@@ -97,33 +97,61 @@
     <footer class="rodape">
         <div class="row-fluid">
             <div class="container">
-
-                <div class="pull-right">
-                    <!-- Info -->
-                    <p class="size-medium">Fale Conosco</p>
-                    <p class="size-big color-yellow">+55 31 25 26 26 23</p>
-                    <p class="size-normal color-blue-claro">Seg a Sex 9h às 18h</p>
-                    <p class="email size-medium color-white"><a href="mailto:contato@viajacom.com">contato@viajacom.com</a></p>
-                </div>
-
-                <!-- Logo -->
-                <div class="pull-left">
-                    <div class="produtoby">
-                        <p class="size-small color-blue-claro">Developed by</p>
-                        <a href="http://www.intip.com.br/" target="_blank" class="logo-intip-ok"></a>
+                <div class="row">
+                    <div class="span3">
+                        <ul>
+                            <li>
+                                <a href="javascript:;" data-scroll="topo" class="link-home">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link-produto">
+                                    Produto
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link-quem">
+                                    Quem Somos ?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="link-contato">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
+                    <div class="span2">
+                        <div class="pull-left">
+                            <div class="produtoby">
+                                <p class="color-blue-claro">Developed by:</p>
+                                <a href="http://www.intip.com.br/" target="_blank" class="logo-intip-ok"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span2">
+                        <p class="color-blue-claro">Associado:</p>
+                        <div class="span10"><div class="abradi"></div></div>
+                    </div>
+                    <div class="span5">
+                        <div class="pull-right">
+                            <!-- Info -->
+                            <p class="size-medium">Fale Conosco</p>
+                            <p class="size-big color-yellow">+55 31 25 26 26 23</p>
+                            <p class="size-normal color-blue-claro">Seg a Sex 9h às 18h</p>
+                            <p class="email size-medium color-white"><a href="mailto:contato@viajacom.com">contato@viajacom.com</a></p>
+                        </div>
+                    </div>
+               </div> 
 
+               <div class="row">
+                    <div class="span12"></div>
+               </div>
             </div>
         </div>
     </footer>
 
-    <div class="row-fluid topo associados">
-        <div class="container">
-            <div class="span2"><p>Associado:</p></div>
-            <div class="span10"><div class="abradi"></div></div>
-        </div>
-    </div>
 
     <!-- Javascript -->
     <script type="text/javascript" src="{{ STATIC_URL }}js/jquery-1.10.2.min.js"></script>
