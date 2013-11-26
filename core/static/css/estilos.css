@@ -187,7 +187,6 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .clientes {padding: 30px 0}
 .clientes .btn {margin: 10px 0 30px 0}
 .clientes h3 {margin-bottom: 35px; color: #333}
-.clientes .col-b .row-fluid:first-child {margin-top: 170px}
 .clientes .span6 .row-fluid {margin-bottom: 50px}
 .depoimento .box {border-radius: 15px 15px 15px 0; margin:0 10px; padding: 20px 25px; color: #fff; font-size: 22px; line-height: 25px; position: relative; z-index: 1}
 .depoimento .box-arrow {width:27px; margin-left:10px; float: left}
@@ -257,6 +256,10 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .rodape .row-fluid {background: #1068BB; color:#fff; padding:30px 0 35px 0}
 .rodape .pull-right {text-align: right}
 .rodape .pull-right .email {margin-top: 35px}
+.rodape ul{list-style-type: none;}
+.rodape li{margin-bottom:20px;font-size:18px;}
+.rodape li a:hover{text-decoration: none; color:#ededed;}
+
 /* -- Setas -- */
 .seta-top{background:url('../imgs/sprite-new.png') no-repeat -28px -392px;width: 123px;height: 153px;position:absolute;top:-90px;left:422px;z-index:50;}
 .seta-bot{background: url('../imgs/sprite-new.png') no-repeat -18px -622px;width: 148px;height: 160px;position:absolute;top:230px;left:344px;z-index:50;}
@@ -264,7 +267,7 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .logo-intip-ok{background: url('../imgs/sprite-new.png') no-repeat -5px -192px;width: 114px;height: 73px; display: inline-block;}
 
 .associados p{font-size:24px;margin:40px 0;}
-.abradi{background: url('../imgs/sprite-new.png') no-repeat -16px -291px;width: 134px;height: 67px;}
+.abradi{background: url('../imgs/abradi-new.png') no-repeat;width: 160px;height: 94px;}
 /* -- Feature --*/
 .icon-cloud{background: url('../imgs/sprite-new.png') no-repeat -13px -14px;width: 55px;height: 48px;margin:0 auto;display: block;}
 .icon-time{background: url('../imgs/sprite-new.png') no-repeat -15px -128px;width: 51px;height: 48px;margin:0 auto;display: block;}
