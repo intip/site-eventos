@@ -79,4 +79,11 @@ jQuery(function(){
         $(this).addClass('selected');
     });
 
+    $('.btn-carac').click(function(){
+        topArticle = 80;
+         $('html, body').stop().animate({
+             scrollTop: topArticle
+         }, 1000);
+    });
+
 });
