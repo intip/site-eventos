@@ -181,7 +181,15 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .modal-caracteristicas .modal-body .span3 p{text-align: center;}
 .modal-caracteristicas .modal-body .span3 hr{margin-bottom:0;}
 .modal-caracteristicas hr{margin:20px 20px 60px 20px;}
-
+.modal-caracteristicas .modal-body .step-one{background: url('../imgs/sprite-new.png') no-repeat -24px -1333px;width: 250px;height: 250px;display: block;margin:0 auto;}
+.modal-caracteristicas .modal-body .step-two{background: url('../imgs/sprite-new.png') no-repeat -24px -1629px;width: 250px;height: 250px;display: block;margin:0 auto;}
+.modal-caracteristicas .modal-body .step-three{background: url('../imgs/sprite-new.png') no-repeat -27px -1924px;width: 250px;height: 250px;display: block;margin:0 auto;}
+.modal-caracteristicas .modal-body .title-number{font-size:50px;color:#333;margin:0;text-align: center;font-weight: bold;margin:20px 0;}
+.rst-mgr-bot{margin-bottom:0 !important;}
+.modal-caracteristicas .modal-body .span4 p{text-align: center;}
+.arrows{position: relative;}
+.arrows .arrow-one{background: url('../imgs/sprite-new.png') no-repeat -113px -1252px;width: 34px;height: 31px;display: block;left: 289px;top: 110px;position: absolute;}
+.arrows .arrow-two{background: url('../imgs/sprite-new.png') no-repeat -113px -1252px;width: 34px;height: 31px;left:611px;top: 110px;display: block;position: absolute;}
 /* -- Coluna Destaques --*/
 
 /* -- Logotipos -- */
