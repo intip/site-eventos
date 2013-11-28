@@ -147,7 +147,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .destaque-photo .btn {margin-bottom: 25px}
 .destaque-description {position: relative;}
 .destaque-description .shadow-white{position:absolute;left: -60px;top: -100px;z-index:1;background:url(../imgs/shadow-white.png) no-repeat;width:533px;height:476px;}
-.destaque-description h1{font-size:28px;position: relative;z-index:2;margin-top:85px;box-shadow: 0px 10px -14px 14px #FFF;text-shadow:2px 2px 1px #fff;font-weight: 600}
+.destaque-description h1{font-size:40px;position: relative;z-index:2;margin-top:10px;box-shadow: 0px 10px -14px 14px #FFF;text-shadow:2px 2px 1px #fff;font-weight: 600}
 .destaque-description .btn{position: relative;z-index:2;font-size:17px;}
 .destaque-description .girl-destaque{background:url(../imgs/girl.png) no-repeat;width:350px;height:335px;position: absolute;left:0;top:15px;}
 
