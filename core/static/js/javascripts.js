@@ -60,14 +60,14 @@ jQuery(function(){
      });
 
     $('.link-quem').click(function () {
-         topArticle = 2890;
+         topArticle = 2935;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 1000);
      });
 
     $('.link-contato').click(function () {
-         topArticle = 4500;
+         topArticle = 4280;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 1000);
