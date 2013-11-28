@@ -529,58 +529,49 @@
                     <div class="span4">
                         <div class="control-group">
                             {{ form.name.label_tag }}
-                            {{ form.name.errors }}
+                            
                             <div class="controls">
                                 {% csrf_token %}
                                 {{ form.name }}
                             </div>
+                            {{ form.name.errors }}
                         </div>
                         <div class="control-group">
                             {{ form.email.label_tag }}
-                            {{ form.email.errors }}
+                            
                             <div class="controls">
                                 {{ form.email }}
                             </div>
-                        </div>
-                        <div class="control-group">
-                            {{ form.company.label_tag }}
-                            {{ form.company.errors }}
-                            <div class="controls">
-                                {{ form.company }}
-                            </div>
+                            {{ form.email.errors }}
                         </div>
                         <div class="control-group">
                             {{ form.telephone.label_tag }}
-                            {{ form.telephone.errors }}
+                            
                             <div class="controls">
                                 {{ form.telephone }}
                             </div>
-                        </div>
-                        <div class="control-group">
-                            {{ form.found.label_tag }}
-                            {{ form.found.errors }}
-                            <div class="controls">
-                                {{ form.found }}
-                            </div>
+                            {{ form.telephone.errors }}
                         </div>
                     </div>
                     <div class="span8">
                         <div class="control-group">
                             {{ form.subject.label_tag }}
-                            {{ form.subject.errors }}
+                            
                             <div class="controls">
                                 {{ form.subject }}
                             </div>
+                            {{ form.subject.errors }}
                         </div>
                         <div class="control-group">
                             {{ form.body.label_tag }}
-                            {{ form.body.errors }}
+                            
                             <div class="controls">
                                 {{ form.body }}
                             </div>
+                            {{ form.body.errors }}
                         </div>
-                        <button type="submit" href="#" class="btn btn-green">
-                            Enviar <i class="icon-white icon-arrow-btn"></i>
+                        <button type="submit" href="#" class="btn btn-yellow ">
+                           Experimentar <i class="icon-arrow-btn"></i>
                         </button>
                     </div>
                 </form>
