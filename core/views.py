@@ -35,6 +35,7 @@ def pages(request, page):
 
 class EventsContactFormView(ContactFormView):
     form_class = EventsContactForm
+    template_name = 'index.html'
 
 
 def contact_success(request):
