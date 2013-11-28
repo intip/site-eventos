@@ -293,8 +293,8 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .rodape li a:hover{text-decoration: none; color:#ededed;}
 
 /* -- Setas -- */
-.seta-top{background:url('../imgs/sprite-new.png') no-repeat -28px -392px;width: 123px;height: 153px;position:absolute;top:-90px;left:422px;z-index:50;}
-.seta-bot{background: url('../imgs/sprite-new.png') no-repeat -18px -622px;width: 148px;height: 160px;position:absolute;top:230px;left:344px;z-index:50;}
+.seta-top{background:url('../imgs/sprite-new.png') no-repeat -310px -385px;width: 123px;height: 153px;position:absolute;top:-90px;left:422px;z-index:50;}
+.seta-bot{background: url('../imgs/sprite-new.png') no-repeat -300px -615px;width: 148px;height: 160px;position:absolute;top:230px;left:344px;z-index:50;}
 
 .logo-intip-ok{background: url('../imgs/sprite-new.png') no-repeat -5px -192px;width: 114px;height: 73px; display: inline-block;}
 
