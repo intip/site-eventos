@@ -67,7 +67,7 @@ jQuery(function(){
      });
 
     $('.link-contato').click(function () {
-         topArticle = 4280;
+         topArticle = 4340;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 1000);

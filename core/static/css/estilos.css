@@ -102,7 +102,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .cube-blue1, .cube-blue2, .cube-yellow1, .cube-yellow2, .cube-gray1, .cube-gray2 {position: absolute; z-index:2}
 .cube-blue1 {top:-240px; left:-350px}
 .cube-yellow1 {top:-110px; left: -230px}
-.cube-yellow2 {top:211px; right:-368px}
+.cube-yellow2 {top:500px; right:-368px}
 .cube-gray2 {top:550px; right: -210px}
 
 /* -- Contato fixo - Fale com consultor -- */
@@ -151,11 +151,11 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .destaque-description .btn{position: relative;z-index:2;font-size:17px;}
 .destaque-description .girl-destaque{background:url(../imgs/girl.png) no-repeat;width:350px;height:335px;position: absolute;left:0;top:15px;}
 
-.form-top{margin-top:25px;background:#fff;height:325px;-webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;}
-.form-top h2{color:#333;font-size:22px;text-align: center;margin:20px 0 0px 0;}
-.form-top h3{color:#333;font-size:14px;text-align: center;margin:0;}
-.form-top .btn-blue{height:40px;font-size:17px;padding:9px 30px 15px 30px;margin-bottom:0;}
-.form-top .btn-blue .icon-arrow-btn{margin-top:0;}
+.form-top{margin-top:25px;background:#2A76C5;height:325px;-webkit-border-top-left-radius: 10px;-webkit-border-top-right-radius: 10px;-moz-border-radius-topleft: 10px;-moz-border-radius-topright: 10px;border-top-left-radius: 10px;border-top-right-radius: 10px;}
+.form-top h2{color:#fff;font-size:22px;text-align: center;margin:20px 0;}
+.form-top h3{color:#fff;font-size:14px;text-align: center;margin:0;}
+.form-top .btn-yellow{height:40px;font-size:17px;padding:9px 30px 15px 30px;margin-bottom:0;}
+.form-top .btn-yellow .icon-arrow-btn{margin-top:0;}
 .form-top p{color:#fed202;font-size:30px;text-align: center;font-weight:600;}
 
 /* -- Modais -- */
@@ -259,7 +259,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .detail-icon.gestao .title {color: #227D00}
 
 /* -- Interna -- */
-.share {position:fixed; left:0; top:345px; width: 100px; padding:15px 20px; background:#f8f8f8; border-radius:0 20px 20px 0;z-index:100;}
+.share {position:fixed; left:0; top:345px; width: 100px; padding:15px 20px; background:#f8f8f8; border-radius:0 20px 20px 0;z-index:100;border-top:3px solid #2A76C5;border-right:3px solid #2A76C5;border-bottom:3px solid #2A76C5;}
 .share p {font-size: 16px; font-weight:400;}
 img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 .interna {margin:40px auto 70px auto}
