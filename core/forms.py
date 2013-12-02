@@ -32,11 +32,11 @@ class EventsContactForm(ContactForm):
                            label=u'Mensagem')
     company = forms.CharField(max_length=100,
                               label=u'Empresa',
-                              blank=True)
+                              required=False)
     telephone = forms.CharField(max_length=100,
                                 label=u'Telefone')
     found = forms.ChoiceField(label=u'Como nos encontrou?',
                               choices=founds,
-                              blank=True)
+                              required=False)
     subject = forms.ChoiceField(label=u'Assunto',
                                 choices=subjects)
