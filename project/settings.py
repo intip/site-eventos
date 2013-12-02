@@ -17,6 +17,8 @@ ADMINS = (
 
 MANAGERS = (
     ("Contato", "diego.bolina@gmail.com"),
+    ('Gallo', 'gallo.campos@intip.com.br'),
+    ('Diêgo', 'diego.bolina@gmail.com'),
 )
 
 
