@@ -171,10 +171,16 @@
 
             <div class="span4 form-top">
                 <h2>Experimente agora !</h2>
-                <form>
-                    <input type="text" placeholder="Seu nome">
-                    <input type="text" placeholder="Telefone">
-                    <input type="text" placeholder="E-mail">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    {{ form.name }}
+                    {{ form.name.errors }}
+
+                    {{ form.telephone }}
+                    {{ form.telephone.errors }}
+
+                    {{ form.email }}
+                    {{ form.email.errors }}
 
                     <button type="submit" href="#" class="btn btn-yellow">
                             Experimentar <i class="icon-arrow-btn"></i>
@@ -518,13 +524,12 @@
 
     <!-- Contato -->
     <div class="row-fluid">
-        <div class="container interna">
+        <div class="container interna" id="contato">
 
             <div class="center-title">
                 <h3>Experimente gratuitamente agora</h3>
                 <p>Envie-nos seu pedido de teste gratuito e confira esse incrível sistema para seu negócio. Envie também quaisquer dúvidas, teremos o maior prazer em atende-lo.</p>
             </div>
-            {{ form.errors }}
             <!-- Formulários -->
             <div class="row-fluid form-contato">
                 <form action="" method="POST">
@@ -549,7 +554,7 @@
                         <div class="control-group">
                             {{ form.telephone.label_tag }}
                             
-                            <div class="controls">
+                            <div class="controls error">
                                 {{ form.telephone }}
                             </div>
                             {{ form.telephone.errors }}
