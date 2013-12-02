@@ -31,10 +31,12 @@ class EventsContactForm(ContactForm):
     body = forms.CharField(widget=forms.Textarea(attrs={'rows': '10'}),
                            label=u'Mensagem')
     company = forms.CharField(max_length=100,
-                              label=u'Empresa')
+                              label=u'Empresa',
+                              blank=True)
     telephone = forms.CharField(max_length=100,
                                 label=u'Telefone')
     found = forms.ChoiceField(label=u'Como nos encontrou?',
-                              choices=founds)
+                              choices=founds,
+                              blank=True)
     subject = forms.ChoiceField(label=u'Assunto',
                                 choices=subjects)
