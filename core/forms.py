@@ -25,18 +25,23 @@ founds = (
 
 class EventsContactForm(ContactForm):
     name = forms.CharField(max_length=100,
+                           widget=forms.TextInput({ "placeholder": "Digite seu nome..."}),
                            label=u'Nome')
     email = forms.EmailField(max_length=200,
+                             widget=forms.TextInput({ "placeholder": "Digite seu E-mail..."}),
                              label=u'E-mail')
     body = forms.CharField(widget=forms.Textarea(attrs={'rows': '10'}),
-                           label=u'Mensagem')
+                           label=u'Mensagem',
+                           required=False)
     company = forms.CharField(max_length=100,
                               label=u'Empresa',
                               required=False)
     telephone = forms.CharField(max_length=100,
+                                widget=forms.TextInput({ "placeholder": "Digite seu telefone..."}),
                                 label=u'Telefone')
     found = forms.ChoiceField(label=u'Como nos encontrou?',
                               choices=founds,
                               required=False)
     subject = forms.ChoiceField(label=u'Assunto',
-                                choices=subjects)
+                                choices=subjects,
+                                required=False)
