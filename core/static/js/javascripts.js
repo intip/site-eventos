@@ -86,4 +86,32 @@ jQuery(function(){
          }, 1000);
     });
 
+    $(".fancybox-thumb").fancybox({
+        width : 960,
+        height : 800,
+        afterShow: function(){
+            $('.fancybox-inner').wrap(
+                $('<a>')
+                .attr('href', $(this.element).attr('href'))
+                .addClass('cloud-zoom')
+                .attr('rel', "position: 'inside'")
+            );
+            $('.cloud-zoom').CloudZoom();
+        },  
+        openEffect : 'none',
+        closeEffect : 'none',
+        prevEffect : 'none',
+        nextEffect : 'none',
+        arrows : true,
+        helpers : {
+            title : {
+                type : 'inside'
+            },
+            thumbs : {
+                width: 40,
+                height: 40
+            }
+        }
+    });
+
 });
