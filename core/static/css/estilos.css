@@ -157,6 +157,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .form-top .btn-yellow{height:40px;font-size:17px;padding:9px 30px 15px 30px;margin-bottom:0;}
 .form-top .btn-yellow .icon-arrow-btn{margin-top:0;}
 .form-top p{color:#fed202;font-size:30px;text-align: center;font-weight:600;}
+.form-top .errorlist{margin: 0 0 -42px;position: relative;left: -155px;top: -53px;padding: 10px 0 10px 0;background: #fff;width: 178px;border: 1px solid red;}
 
 /* -- Modais -- */
 .modal{width:970px;margin-left:-440px;position: absolute;}
@@ -315,6 +316,7 @@ img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
 
 .errorlist{list-style-type: none;margin-left:0;}
 .errorlist li{color:red;}
+.destaque-title{font-size:56px;line-height:70px !important;}
 /** Jcarousel **/
 .jcarousel{
     background:#fff;
