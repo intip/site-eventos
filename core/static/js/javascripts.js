@@ -53,21 +53,21 @@ jQuery(function(){
      });
 
     $('.link-produto').click(function () {
-         topArticle = 1200;
+         topArticle = 1225;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 1000);
      });
 
     $('.link-quem').click(function () {
-         topArticle = 2935;
+         topArticle = 2960;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 1000);
      });
 
     $('.link-contato').click(function () {
-         topArticle = 4340;
+         topArticle = 4365;
          $('html, body').stop().animate({
              scrollTop: topArticle
          }, 1000);
