@@ -96,7 +96,8 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* -- Outros -- */
 .center {text-align: center}
 .relative {position: relative}
-
+.mgr-top{margin-top:100px;}
+.link-back{font-size:18px;}
 /* -- Cubos Texture -- */
 .cubes .container {position: relative}
 .cube-blue1, .cube-blue2, .cube-yellow1, .cube-yellow2, .cube-gray1, .cube-gray2 {position: absolute; z-index:2}

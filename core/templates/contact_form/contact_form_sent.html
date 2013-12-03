@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
-
+{% block css %}
+<style>
+.menu{
+    display: none;
+}
+.rodape li{
+    text-indent: -9999px;
+}
+</style>
+{% endblock %}
 {% block content %}
 
     <!-- Breadcrumb -->
@@ -16,7 +25,7 @@
     <div class="row-fluid h1-title">
         <div class="container">
             <div class="row-fluid">
-                <h1>Contato</h1>
+                <h1 class="mgr-top">Contato</h1>
                 <h2>Entre em contato conosco.</h2>
             </div>
         </div>
@@ -26,7 +35,9 @@
     <div class="row-fluid">
         <div class="container interna">
 
-            <h2>Enviado com sucesso!</h2>
+            <h2>Cadastro realizado com sucesso, Você recebera um e-mail em breve para validação do cadastro !</h2>
+
+            <a href='/' class="link-back">Clique aqui para retornar ao site !</a>
 
         </div>
     </div>
