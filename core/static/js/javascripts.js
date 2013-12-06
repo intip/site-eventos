@@ -113,10 +113,4 @@ jQuery(function(){
             }
         }
     });
-
-    setTimeout(function() {
-          $('.destaque-description.well').animate({"margin-top": "30px"}, "fast");
-    }, 500);
-    
-
 });
