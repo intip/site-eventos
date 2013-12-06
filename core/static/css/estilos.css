@@ -265,7 +265,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .share {position:fixed; left:0; top:345px; width: 100px; padding:15px 20px; background:#f8f8f8; border-radius:0 20px 20px 0;z-index:100;border-top:3px solid #2A76C5;border-right:3px solid #2A76C5;border-bottom:3px solid #2A76C5;}
 .share p {font-size: 16px; font-weight:400;}
 img.left {margin:0 20px 10px 0; float: left; border-radius: 10px}
-.interna {margin:40px auto 70px auto}
+.interna {margin: 0 auto 70px auto;padding-top: 40px;}
 .interna p {margin-bottom: 15px; line-height: 22px; font-size: 16px}
 .center-title {text-align: center; margin-bottom: 50px}
 .center-title h3 {color: #0F5EA8; margin: 0 0 15px 0;}

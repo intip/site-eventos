@@ -42,35 +42,34 @@ jQuery(function(){
         }
     });
 
-
     var topArticle;
      //Define o tamanho da estrutura.
     $('.link-home').click(function () {
          topArticle = 0;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 1000);
+         }, 1000, 'easeInOutExpo');
      });
 
     $('.link-produto').click(function () {
          topArticle = 1225;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 1000);
+         }, 1000, 'easeInOutExpo');
      });
 
     $('.link-quem').click(function () {
          topArticle = 2960;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 1000);
+         }, 1000, 'easeInOutExpo');
      });
 
     $('.link-contato').click(function () {
          topArticle = 4365;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 1000);
+         }, 1000, 'easeInOutExpo');
      });
 
     // Menu active
@@ -83,7 +82,7 @@ jQuery(function(){
         topArticle = 80;
          $('html, body').stop().animate({
              scrollTop: topArticle
-         }, 1000);
+         }, 1000, 'easeInOutExpo');
     });
 
     $(".fancybox-thumb").fancybox({
