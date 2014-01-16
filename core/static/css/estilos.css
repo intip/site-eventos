@@ -181,7 +181,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 .modal-caracteristicas .modal-body p{padding:20px 30px 0 30px; font-size:16px;}
 .modal-caracteristicas .modal-body{max-height: none;}
 .modal-caracteristicas .modal-body .row{margin-bottom:20px;}
-.modal-caracteristicas .modal-body .span3 p{text-align: center;}
+.modal-caracteristicas .modal-body .span3 p{text-align: left;}
 .modal-caracteristicas .modal-body .span3 hr{margin-bottom:0;}
 .modal-caracteristicas hr{margin:20px 20px 60px 20px;}
 .modal-caracteristicas .modal-body .step-one{background: url('../imgs/sprite-new.png') no-repeat -24px -1333px;width: 250px;height: 250px;display: block;margin:0 auto;}
