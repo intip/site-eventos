@@ -119,7 +119,7 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 /* -- Topo -- */
 .topo {position: fixed; z-index:100; background: #fff; width:100%;border-bottom:5px solid #FED300;}
 .topo .container {padding: 15px 0; position: relative}
-.logo-viaja .title {font-size: 50px; font-weight:700; float: left; margin: 27px 0 0 18px; color: #1068BB}
+.logo-viaja .title {font-size: 29px; font-weight:700; float: left; margin: 27px 0 0 18px; color: #1068BB}
 .logo-viaja .title a{color:#1068BB;}
 .logo-viaja .title a:hover{text-decoration: none;color:#FBD200;}
 .menu {float:right; margin: -14px 0 0 0; background: #fff; border-radius:0 0 10px 15px}
